@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living with Bipolar Disorder — Lifestyle, Coping & Support</title>
+    <meta name="description" content="Practical strategies for living with bipolar disorder including lifestyle management, recognizing triggers, building support networks, and maintaining wellness.">
+    <link rel="canonical" href="https://bipolar.md/living-with-bipolar.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%237c3aed' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #7c3aed;
+            --accent-dark: #6d28d9;
+            --accent-light: #ede9fe;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .logo span { color: var(--accent); }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--accent); }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 120px 24px 64px;
+        }
+        .page-header {
+            margin-bottom: 48px;
+        }
+        .page-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .page-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 48px;
+        }
+        h2 {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        h3 {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: var(--text-primary);
+        }
+        p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        .tip-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 20px 0;
+        }
+        .tip-card h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .info-box {
+            background: var(--accent-light);
+            border: 1px solid #c4b5fd;
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            font-size: 17px;
+            color: var(--accent-dark);
+        }
+        .info-box p {
+            color: #5b21b6;
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        .checklist {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+        .checklist h3 {
+            margin-top: 0;
+        }
+        .checklist ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        .checklist li {
+            position: relative;
+            padding-left: 32px;
+            margin-bottom: 12px;
+        }
+        .checklist li::before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-size: 18px;
+        }
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+            margin-top: 80px;
+        }
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        a { color: var(--accent); }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            main { padding: 100px 16px 40px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">bipolar<span>.md</span></a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/types.html">Types</a>
+                <a href="/symptoms.html">Symptoms</a>
+                <a href="/treatment.html">Treatment</a>
+                <a href="/living-with-bipolar.html">Living With</a>
+                <a href="/faq.html">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="page-eyebrow">Wellness</div>
+            <h1>Living with Bipolar Disorder</h1>
+            <p class="page-subtitle">With proper treatment and self-management strategies, people with bipolar disorder can lead fulfilling, productive lives. These evidence-based approaches can help you maintain stability.</p>
+        </div>
+
+        <section class="section">
+            <h2>The Foundation: Treatment Adherence</h2>
+            <p>The single most important factor in living well with bipolar disorder is sticking with treatment—even when you feel better. Stopping medication is the #1 predictor of relapse.</p>
+            
+            <div class="tip-card">
+                <h3>Tips for Medication Adherence</h3>
+                <ul>
+                    <li>Use a pill organizer and set daily reminders</li>
+                    <li>Link medication to a daily routine (morning coffee, brushing teeth)</li>
+                    <li>Keep a backup supply when traveling</li>
+                    <li>Talk to your doctor about side effects—there are often alternatives</li>
+                    <li>Remember: feeling good is a sign treatment is <em>working</em>, not that you no longer need it</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Sleep: Your Most Important Routine</h2>
+            <p>Sleep disruption is both a trigger and an early warning sign of mood episodes. Protecting your sleep is one of the most powerful things you can do to prevent relapse.</p>
+            
+            <h3>Sleep Hygiene for Bipolar</h3>
+            <ul>
+                <li><strong>Consistent schedule:</strong> Go to bed and wake up at the same time every day—even weekends</li>
+                <li><strong>7-9 hours:</strong> Most adults need this amount; track what works for you</li>
+                <li><strong>Wind down routine:</strong> Start relaxing 1 hour before bed</li>
+                <li><strong>Dark, cool bedroom:</strong> Optimize your sleep environment</li>
+                <li><strong>Limit screens:</strong> Blue light can disrupt sleep; use night mode or stop screens 1 hour before bed</li>
+                <li><strong>Avoid caffeine after noon:</strong> Caffeine has a long half-life</li>
+                <li><strong>No alcohol before bed:</strong> It disrupts sleep quality</li>
+            </ul>
+            
+            <div class="info-box">
+                <h3>⚠️ Sleep Changes Are Warning Signs</h3>
+                <p>If you're sleeping much less than usual and don't feel tired, contact your treatment team—this is often the first sign of an impending manic episode. Conversely, oversleeping can signal depression.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Tracking Your Mood</h2>
+            <p>Mood tracking helps you identify patterns, triggers, and early warning signs. It also provides valuable information for your treatment team.</p>
+            
+            <h3>What to Track</h3>
+            <ul>
+                <li>Daily mood (scale of 1-10, or descriptive)</li>
+                <li>Hours of sleep</li>
+                <li>Medication taken (yes/no)</li>
+                <li>Energy level</li>
+                <li>Anxiety level</li>
+                <li>Irritability</li>
+                <li>Significant events or stressors</li>
+                <li>Substances used (caffeine, alcohol, etc.)</li>
+            </ul>
+            
+            <h3>Recommended Apps</h3>
+            <ul>
+                <li><strong>Daylio</strong> — Simple, visual mood tracking</li>
+                <li><strong>eMoods</strong> — Designed specifically for bipolar disorder</li>
+                <li><strong>Bearable</strong> — Comprehensive symptom and factor tracking</li>
+                <li><strong>Moodpath</strong> — Includes CBT-based exercises</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Identifying Your Triggers</h2>
+            <p>Triggers are factors that can precipitate mood episodes. Common triggers include:</p>
+            
+            <h3>Common Manic Triggers</h3>
+            <ul>
+                <li>Sleep deprivation</li>
+                <li>Stimulants (caffeine, ADHD medications, cocaine)</li>
+                <li>Travel across time zones</li>
+                <li>Major life changes (even positive ones)</li>
+                <li>Spring/summer (for some people)</li>
+                <li>Starting antidepressants</li>
+            </ul>
+            
+            <h3>Common Depressive Triggers</h3>
+            <ul>
+                <li>High stress</li>
+                <li>Loss or grief</li>
+                <li>Social isolation</li>
+                <li>Fall/winter (seasonal pattern)</li>
+                <li>Physical illness</li>
+                <li>Alcohol or drug use</li>
+            </ul>
+            
+            <p>Your triggers are individual. Use mood tracking to identify your personal patterns over time.</p>
+        </section>
+
+        <section class="section">
+            <h2>Building Your Support Network</h2>
+            <p>Social support is crucial for managing bipolar disorder. Build a network that includes:</p>
+            
+            <ul>
+                <li><strong>Treatment team:</strong> Psychiatrist, therapist, primary care doctor</li>
+                <li><strong>Trusted friends and family:</strong> People who know your warning signs</li>
+                <li><strong>Peer support:</strong> Others who understand (support groups, online communities)</li>
+                <li><strong>Crisis contacts:</strong> People you can reach in an emergency</li>
+            </ul>
+            
+            <div class="tip-card">
+                <h3>Share Your Warning Signs</h3>
+                <p>Create a list of your personal warning signs and share it with trusted loved ones. Ask them to gently alert you if they notice these signs—and agree in advance how you'd like them to approach you.</p>
+            </div>
+            
+            <h3>Support Groups</h3>
+            <ul>
+                <li><a href="https://www.dbsalliance.org/support/chapters-and-support-groups/" target="_blank">DBSA Support Groups</a> — In-person and online</li>
+                <li><a href="https://www.nami.org/Support-Education/Support-Groups" target="_blank">NAMI Support Groups</a> — For individuals and families</li>
+                <li><a href="https://www.reddit.com/r/bipolar/" target="_blank">r/bipolar</a> — Online peer community</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Lifestyle Factors</h2>
+            
+            <h3>Exercise</h3>
+            <p>Regular physical activity helps regulate mood, improves sleep, and reduces anxiety. Aim for 30 minutes most days. Any movement counts—walking, swimming, yoga, dancing.</p>
+            
+            <h3>Nutrition</h3>
+            <p>While no specific diet treats bipolar disorder, healthy eating supports overall brain health:</p>
+            <ul>
+                <li>Regular, balanced meals (blood sugar stability)</li>
+                <li>Omega-3 fatty acids (fish, walnuts, flaxseed)</li>
+                <li>Limit processed foods and sugar</li>
+                <li>Stay hydrated (especially important with lithium)</li>
+            </ul>
+            
+            <h3>Avoid Substances</h3>
+            <p>Alcohol and recreational drugs can trigger episodes, interfere with medications, and worsen symptoms:</p>
+            <ul>
+                <li><strong>Alcohol:</strong> Depressant that disrupts sleep and mood stability</li>
+                <li><strong>Cannabis:</strong> Can trigger psychosis and worsen anxiety</li>
+                <li><strong>Stimulants:</strong> Can trigger mania</li>
+            </ul>
+            
+            <h3>Stress Management</h3>
+            <ul>
+                <li>Mindfulness meditation (apps: Headspace, Calm, Insight Timer)</li>
+                <li>Deep breathing exercises</li>
+                <li>Setting realistic goals and boundaries</li>
+                <li>Learning to say no</li>
+                <li>Regular breaks and leisure time</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Create a Wellness Action Plan</h2>
+            <p>A Wellness Recovery Action Plan (WRAP) helps you stay well and respond to warning signs. Include:</p>
+            
+            <div class="checklist">
+                <h3>Wellness Plan Checklist</h3>
+                <ul>
+                    <li>Daily maintenance activities (sleep, medication, routine)</li>
+                    <li>Personal warning signs for mania</li>
+                    <li>Personal warning signs for depression</li>
+                    <li>Trigger list</li>
+                    <li>Coping strategies that work for you</li>
+                    <li>Support people and their contact info</li>
+                    <li>Treatment team contact info</li>
+                    <li>Crisis plan (what to do, who to contact)</li>
+                    <li>Preferences for crisis treatment</li>
+                </ul>
+            </div>
+            
+            <p>Share your plan with your treatment team and trusted support people. Review and update it regularly.</p>
+        </section>
+
+        <section class="section">
+            <h2>Work & Relationships</h2>
+            
+            <h3>Employment</h3>
+            <ul>
+                <li>Know your rights: ADA protections may apply</li>
+                <li>Disclosure is a personal choice—you're not required to share your diagnosis</li>
+                <li>If you do disclose, focus on what accommodations you need, not your diagnosis</li>
+                <li>Maintain regular work hours when possible</li>
+                <li>Build recovery time into demanding periods</li>
+            </ul>
+            
+            <h3>Relationships</h3>
+            <ul>
+                <li>Educate partners and family about bipolar disorder</li>
+                <li>Communicate openly about symptoms and needs</li>
+                <li>Consider couples or family therapy</li>
+                <li>Apologize for past behavior while unwell, but don't carry excessive guilt</li>
+                <li>Make decisions about disclosure timing in new relationships</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Resources</h2>
+            
+            <h3>Books</h3>
+            <ul>
+                <li><em>The Bipolar Disorder Survival Guide</em> by David Miklowitz</li>
+                <li><em>An Unquiet Mind</em> by Kay Redfield Jamison (memoir)</li>
+                <li><em>Take Charge of Bipolar Disorder</em> by Julie Fast</li>
+            </ul>
+            
+            <h3>Organizations</h3>
+            <ul>
+                <li><a href="https://www.dbsalliance.org/" target="_blank">Depression and Bipolar Support Alliance (DBSA)</a></li>
+                <li><a href="https://www.nami.org/" target="_blank">National Alliance on Mental Illness (NAMI)</a></li>
+                <li><a href="https://www.nimh.nih.gov/health/topics/bipolar-disorder" target="_blank">National Institute of Mental Health</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>© 2026 bipolar.md · Part of <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a></p>
+            <p style="margin-top: 8px; font-size: 12px;">Information for educational purposes. This is not medical advice. Always consult a mental health professional.</p>
+        </div>
+    </footer>
+</body>
+</html>

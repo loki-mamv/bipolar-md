@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bipolar Disorder Symptoms — Mania, Hypomania & Depression</title>
+    <meta name="description" content="Comprehensive guide to bipolar disorder symptoms including manic episodes, hypomanic episodes, depressive episodes, and mixed features. Learn warning signs and when to seek help.">
+    <link rel="canonical" href="https://bipolar.md/symptoms.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%237c3aed' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #7c3aed;
+            --accent-dark: #6d28d9;
+            --accent-light: #ede9fe;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .logo span { color: var(--accent); }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--accent); }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 120px 24px 64px;
+        }
+        .page-header {
+            margin-bottom: 48px;
+        }
+        .page-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .page-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 48px;
+        }
+        h2 {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        h3 {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: var(--text-primary);
+        }
+        p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        .symptom-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 28px;
+            margin: 24px 0;
+        }
+        .symptom-card.mania {
+            border-left: 4px solid #f97316;
+        }
+        .symptom-card.depression {
+            border-left: 4px solid #3b82f6;
+        }
+        .symptom-card.mixed {
+            border-left: 4px solid var(--accent);
+        }
+        .symptom-card h3 {
+            margin-top: 0;
+            font-size: 22px;
+        }
+        .warning-box {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-left: 4px solid #ef4444;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .warning-box h3 {
+            color: #991b1b;
+            margin-top: 0;
+            font-size: 17px;
+        }
+        .warning-box p {
+            color: #7f1d1d;
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        .info-box {
+            background: var(--accent-light);
+            border: 1px solid #c4b5fd;
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            font-size: 17px;
+            color: var(--accent-dark);
+        }
+        .info-box p {
+            color: #5b21b6;
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+            margin-top: 80px;
+        }
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            main { padding: 100px 16px 40px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">bipolar<span>.md</span></a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/types.html">Types</a>
+                <a href="/symptoms.html">Symptoms</a>
+                <a href="/treatment.html">Treatment</a>
+                <a href="/living-with-bipolar.html">Living With</a>
+                <a href="/faq.html">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="page-eyebrow">Signs & Symptoms</div>
+            <h1>Recognizing Bipolar Symptoms</h1>
+            <p class="page-subtitle">Understanding the symptoms of manic, hypomanic, and depressive episodes is essential for early recognition and effective treatment of bipolar disorder.</p>
+        </div>
+
+        <div class="warning-box">
+            <h3>⚠️ When to Seek Help</h3>
+            <p>If you or someone you know is experiencing thoughts of suicide or self-harm, contact the <strong>988 Suicide & Crisis Lifeline</strong> immediately by calling or texting 988. This is a medical emergency.</p>
+        </div>
+
+        <section class="section">
+            <h2>Overview</h2>
+            <p>Bipolar disorder causes dramatic shifts in mood, energy, and activity levels. People experience distinct periods called "mood episodes" that are very different from their typical behavior. There are three main types of episodes:</p>
+            <ul>
+                <li><strong>Manic episodes:</strong> Periods of abnormally elevated, expansive, or irritable mood with increased energy</li>
+                <li><strong>Hypomanic episodes:</strong> Similar to mania but less severe and shorter in duration</li>
+                <li><strong>Depressive episodes:</strong> Periods of persistent sadness, hopelessness, and low energy</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <div class="symptom-card mania">
+                <h3>🔥 Manic Episode Symptoms</h3>
+                <p>A manic episode is a period of at least <strong>7 days</strong> (or any duration if hospitalization is required) during which a person feels abnormally and persistently elevated, expansive, or irritable, with increased energy or activity.</p>
+                
+                <h4 style="font-weight: 600; margin: 20px 0 12px; color: var(--text-primary);">Core Symptoms (3+ required)</h4>
+                <ul>
+                    <li><strong>Inflated self-esteem or grandiosity:</strong> Unrealistic beliefs about one's abilities, importance, or powers</li>
+                    <li><strong>Decreased need for sleep:</strong> Feeling rested after only 3 hours of sleep</li>
+                    <li><strong>Increased talkativeness:</strong> Pressure to keep talking; speech that's rapid and hard to interrupt</li>
+                    <li><strong>Racing thoughts:</strong> Ideas that come too fast to articulate; jumping between topics</li>
+                    <li><strong>Distractibility:</strong> Attention easily drawn to unimportant details</li>
+                    <li><strong>Increased goal-directed activity:</strong> Taking on multiple projects, excessive energy</li>
+                    <li><strong>Risky behavior:</strong> Poor judgment in spending, sexual behavior, business investments</li>
+                </ul>
+                
+                <h4 style="font-weight: 600; margin: 20px 0 12px; color: var(--text-primary);">Impact</h4>
+                <p>Manic episodes cause significant impairment in social, occupational, or other important areas of functioning. They may include psychotic features (hallucinations, delusions) or require hospitalization to prevent harm to self or others.</p>
+            </div>
+
+            <div class="symptom-card mania">
+                <h3>⚡ Hypomanic Episode Symptoms</h3>
+                <p>A hypomanic episode involves the <strong>same symptoms as mania</strong> but is less severe. It lasts at least <strong>4 consecutive days</strong> and represents a clear change from usual behavior that's observable by others.</p>
+                
+                <h4 style="font-weight: 600; margin: 20px 0 12px; color: var(--text-primary);">Key Differences from Mania</h4>
+                <ul>
+                    <li>Symptoms are noticeable but don't cause severe impairment</li>
+                    <li>No psychotic features</li>
+                    <li>Does not require hospitalization</li>
+                    <li>Person may feel great and be highly productive</li>
+                    <li>Others notice the change in behavior</li>
+                </ul>
+                
+                <div class="info-box" style="margin-top: 20px;">
+                    <h3>💡 The Danger of Hypomania</h3>
+                    <p>Because hypomania often feels good, people may not recognize it as a symptom. However, without treatment, hypomanic episodes can escalate to full mania or be followed by severe depression.</p>
+                </div>
+            </div>
+
+            <div class="symptom-card depression">
+                <h3>🌧️ Depressive Episode Symptoms</h3>
+                <p>A major depressive episode is a period of at least <strong>2 weeks</strong> during which a person experiences persistent sadness or loss of interest, along with other symptoms that cause significant distress or impairment.</p>
+                
+                <h4 style="font-weight: 600; margin: 20px 0 12px; color: var(--text-primary);">Core Symptoms (5+ required, including depressed mood or loss of interest)</h4>
+                <ul>
+                    <li><strong>Depressed mood:</strong> Feeling sad, empty, hopeless, or tearful most of the day</li>
+                    <li><strong>Loss of interest:</strong> Markedly diminished interest or pleasure in almost all activities</li>
+                    <li><strong>Weight/appetite changes:</strong> Significant weight loss or gain; increase or decrease in appetite</li>
+                    <li><strong>Sleep disturbances:</strong> Insomnia (difficulty sleeping) or hypersomnia (sleeping too much)</li>
+                    <li><strong>Psychomotor changes:</strong> Restlessness or being slowed down (observable by others)</li>
+                    <li><strong>Fatigue:</strong> Loss of energy nearly every day</li>
+                    <li><strong>Worthlessness or guilt:</strong> Excessive or inappropriate guilt</li>
+                    <li><strong>Concentration problems:</strong> Difficulty thinking, concentrating, or making decisions</li>
+                    <li><strong>Thoughts of death:</strong> Recurrent thoughts of death, suicidal ideation, or suicide attempt</li>
+                </ul>
+                
+                <h4 style="font-weight: 600; margin: 20px 0 12px; color: var(--text-primary);">Bipolar Depression vs. Unipolar Depression</h4>
+                <p>Bipolar depression often differs from unipolar (regular) depression:</p>
+                <ul>
+                    <li>More likely to include hypersomnia (oversleeping) and increased appetite</li>
+                    <li>More likely to have psychomotor retardation (slowed movement)</li>
+                    <li>May have more sudden onset</li>
+                    <li>Higher risk of suicidal thinking</li>
+                </ul>
+            </div>
+
+            <div class="symptom-card mixed">
+                <h3>🔀 Mixed Features</h3>
+                <p>Some episodes include symptoms of both mania and depression at the same time—called "mixed features." For example, feeling very energized while also feeling hopeless and sad.</p>
+                
+                <h4 style="font-weight: 600; margin: 20px 0 12px; color: var(--text-primary);">Examples of Mixed Features</h4>
+                <ul>
+                    <li>High energy with depressed mood</li>
+                    <li>Racing thoughts with hopelessness</li>
+                    <li>Irritability with sadness</li>
+                    <li>Decreased sleep with fatigue</li>
+                </ul>
+                
+                <div class="warning-box" style="margin-top: 20px;">
+                    <h3>⚠️ Increased Risk</h3>
+                    <p>Mixed episodes carry a particularly high risk of suicide because the combination of depressed mood and high energy can provide the "activation" to act on suicidal thoughts. Seek help immediately if experiencing mixed features.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Early Warning Signs</h2>
+            <p>Learning to recognize your personal early warning signs can help you get treatment before a full episode develops. Common warning signs include:</p>
+            
+            <h3>Before a Manic Episode</h3>
+            <ul>
+                <li>Sleeping less but not feeling tired</li>
+                <li>Increased energy and activity</li>
+                <li>Talking more than usual</li>
+                <li>Feeling unusually confident or optimistic</li>
+                <li>Starting new projects</li>
+                <li>Increased social activity</li>
+            </ul>
+            
+            <h3>Before a Depressive Episode</h3>
+            <ul>
+                <li>Withdrawing from friends and activities</li>
+                <li>Sleeping more or less than usual</li>
+                <li>Loss of interest in hobbies</li>
+                <li>Difficulty concentrating</li>
+                <li>Changes in appetite</li>
+                <li>Feeling more tired than usual</li>
+            </ul>
+            
+            <div class="info-box">
+                <h3>📝 Create Your Warning Signs List</h3>
+                <p>Work with your treatment team to identify your personal warning signs. Share this list with trusted friends and family so they can help you recognize when intervention may be needed.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>When Symptoms Aren't Bipolar</h2>
+            <p>Other conditions can cause symptoms similar to bipolar disorder. Your healthcare provider will rule out:</p>
+            <ul>
+                <li><strong>Medical conditions:</strong> Thyroid disorders, neurological conditions, infections</li>
+                <li><strong>Substance effects:</strong> Drugs, alcohol, or medications</li>
+                <li><strong>Other mental health conditions:</strong> ADHD, borderline personality disorder, schizophrenia</li>
+            </ul>
+            <p>A comprehensive evaluation by a qualified mental health professional is essential for accurate diagnosis.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>© 2026 bipolar.md · Part of <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a></p>
+            <p style="margin-top: 8px; font-size: 12px;">Information based on DSM-5 criteria and clinical guidelines. This is not medical advice. Always consult a mental health professional.</p>
+        </div>
+    </footer>
+</body>
+</html>

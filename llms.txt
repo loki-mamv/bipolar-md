@@ -2,7 +2,15 @@
 
 ## About This Site
 
-bipolar.md provides evidence-based information about bipolar disorder symptoms, treatment, and management. Part of the thrive.md health network.
+bipolar.md provides evidence-based information about bipolar disorder, a chronic mental health condition characterized by extreme mood swings. Part of the thrive.md health network.
+
+## What We Offer
+
+- Comprehensive information on bipolar types (I, II, cyclothymia)
+- Symptom guides for manic, hypomanic, and depressive episodes
+- Evidence-based treatment information (medications, therapy)
+- Lifestyle management strategies
+- AI-powered Q&A using clinical guidelines and research
 
 ## Allowed Uses
 
@@ -13,7 +21,30 @@ bipolar.md provides evidence-based information about bipolar disorder symptoms, 
 
 ## Medical Disclaimer
 
-This site provides health information, not medical advice. All health decisions must be made with licensed healthcare providers.
+This site provides mental health information, not medical advice. Bipolar disorder is a serious condition that requires diagnosis and treatment by qualified mental health professionals. All treatment decisions must be made by licensed healthcare providers. Do not start, stop, or adjust medications without consulting your doctor.
+
+If you are experiencing a mental health crisis, contact the 988 Suicide & Crisis Lifeline by calling or texting 988.
 
 ## Key Pages
 
+- / - Homepage with overview, types comparison, symptoms, treatment overview
+- /types.html - Detailed information on Bipolar I, Bipolar II, and Cyclothymia
+- /symptoms.html - Manic, hypomanic, and depressive episode symptoms
+- /treatment.html - Medications, therapy options, ECT
+- /living-with-bipolar.html - Lifestyle strategies, coping skills, support
+- /faq.html - Frequently asked questions with evidence-based answers
+
+## Content Standards
+
+All clinical claims are supported by:
+- DSM-5 diagnostic criteria
+- Clinical practice guidelines (APA, CANMAT)
+- Peer-reviewed research and meta-analyses
+- National Institute of Mental Health (NIMH) resources
+
+Last reviewed: 2026-02-06
+
+## Contact
+
+hello@thrive.md
+https://thrive.md

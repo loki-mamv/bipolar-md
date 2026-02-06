@@ -2,74 +2,208 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="ai-content" content="allowed">
-    <meta name="ai-training" content="allowed">
-    <meta name="ai-topic" content="bipolar disorder, mental health, mood disorders">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bipolar Types Explained — Bipolar I vs II vs Cyclothymia | bipolar.md</title>
-    <meta name="description" content="Understanding the different types of bipolar disorder: Bipolar I, Bipolar II, and Cyclothymic Disorder. Key differences, symptoms, and diagnosis.">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@thraborivemd">
-    <meta name="twitter:title" content="Bipolar Disorder Guide">
-    <meta name="twitter:description" content="Evidence-based health information from bipolar.md">
+    <title>Types of Bipolar Disorder — Bipolar I, II & Cyclothymia</title>
+    <meta name="description" content="Learn about the three main types of bipolar disorder: Bipolar I (full mania), Bipolar II (hypomania), and Cyclothymia. Understand the differences and diagnostic criteria.">
     <link rel="canonical" href="https://bipolar.md/types.html">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%238b5cf6' text-anchor='middle'%3E.md%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%237c3aed' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-primary: #ffffff;
             --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
             --text-primary: #0f172a;
             --text-secondary: #475569;
             --text-muted: #94a3b8;
-            --accent: #8b5cf6;
-            --accent-dark: #7c3aed;
+            --accent: #7c3aed;
+            --accent-dark: #6d28d9;
             --accent-light: #ede9fe;
             --border: #e2e8f0;
             --font-display: 'Source Serif 4', Georgia, serif;
             --font-body: 'Inter', -apple-system, sans-serif;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: var(--font-body); background: var(--bg-primary); color: var(--text-primary); line-height: 1.8; font-size: 17px; }
-        
-        header { background: var(--bg-primary); border-bottom: 1px solid var(--border); padding: 16px 24px; position: sticky; top: 0; z-index: 100; }
-        .header-inner { max-width: 800px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--text-primary); text-decoration: none; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
         .logo span { color: var(--accent); }
-        nav a { color: var(--text-secondary); text-decoration: none; margin-left: 24px; font-size: 15px; }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
         nav a:hover { color: var(--accent); }
-        
-        article { max-width: 700px; margin: 0 auto; padding: 60px 24px 80px; }
-        .breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
-        .breadcrumb a { color: var(--accent); text-decoration: none; }
-        h1 { font-family: var(--font-display); font-size: clamp(32px, 5vw, 42px); font-weight: 700; line-height: 1.2; margin-bottom: 16px; }
-        .article-meta { font-size: 14px; color: var(--text-muted); margin-bottom: 24px; }
-        .article-intro { font-size: 19px; color: var(--text-secondary); padding-bottom: 32px; border-bottom: 1px solid var(--border); margin-bottom: 32px; }
-        
-        h2 { font-family: var(--font-display); font-size: 28px; font-weight: 600; margin: 48px 0 20px; }
-        h3 { font-family: var(--font-display); font-size: 22px; font-weight: 600; margin: 36px 0 16px; }
-        p { margin-bottom: 20px; }
-        ul, ol { margin: 0 0 20px 24px; }
-        li { margin-bottom: 10px; }
-        
-        .type-detail { background: var(--bg-secondary); border-radius: 16px; padding: 28px; margin: 32px 0; border-left: 4px solid var(--accent); }
-        .type-detail h3 { margin-top: 0; }
-        .type-detail .key { font-weight: 600; color: var(--accent-dark); }
-        
-        .comparison-table { width: 100%; border-collapse: collapse; margin: 32px 0; font-size: 15px; }
-        .comparison-table th { background: var(--accent); color: white; padding: 14px 12px; text-align: left; }
-        .comparison-table td { padding: 14px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
-        .comparison-table tr:hover td { background: var(--bg-secondary); }
-        
-        .info-box { background: var(--accent-light); border-radius: 12px; padding: 20px 24px; margin: 24px 0; }
-        .info-box h4 { font-size: 15px; font-weight: 600; color: var(--accent-dark); margin-bottom: 8px; }
-        .info-box p { margin: 0; }
-        
-        footer { background: var(--bg-secondary); border-top: 1px solid var(--border); padding: 48px 24px; }
-        .footer-inner { max-width: 700px; margin: 0 auto; text-align: center; font-size: 14px; color: var(--text-muted); }
-        .footer-inner a { color: var(--accent); text-decoration: none; }
-        
-        @media (max-width: 768px) { nav { display: none; } .comparison-table { font-size: 13px; } }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 120px 24px 64px;
+        }
+        .page-header {
+            margin-bottom: 48px;
+        }
+        .page-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .page-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 48px;
+        }
+        h2 {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        h3 {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: var(--text-primary);
+        }
+        p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .comparison-table thead {
+            background: var(--bg-secondary);
+        }
+        .comparison-table th {
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border);
+        }
+        .comparison-table td {
+            padding: 12px 16px;
+            font-size: 15px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        .info-box {
+            background: var(--accent-light);
+            border: 1px solid #c4b5fd;
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            font-size: 17px;
+            color: var(--accent-dark);
+        }
+        .info-box p {
+            color: #5b21b6;
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        .type-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 28px;
+            margin: 24px 0;
+        }
+        .type-card h3 {
+            margin-top: 0;
+            font-size: 22px;
+            color: var(--accent);
+        }
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+            margin-top: 80px;
+        }
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            main { padding: 100px 16px 40px; }
+            .comparison-table { font-size: 13px; }
+            .comparison-table th, .comparison-table td { padding: 8px 10px; }
+        }
     </style>
 </head>
 <body>
@@ -78,133 +212,173 @@
             <a href="/" class="logo">bipolar<span>.md</span></a>
             <nav>
                 <a href="/">Home</a>
-                <a href="/blog.html">Articles</a>
-                <a href="/resources.html">Resources</a>
+                <a href="/types.html">Types</a>
+                <a href="/symptoms.html">Symptoms</a>
+                <a href="/treatment.html">Treatment</a>
+                <a href="/living-with-bipolar.html">Living With</a>
+                <a href="/faq.html">FAQ</a>
             </nav>
         </div>
     </header>
 
-    <article>
-        <div class="breadcrumb"><a href="/">Home</a> / <a href="/blog.html">Articles</a> / Types</div>
-        <h1>Types of Bipolar Disorder</h1>
-        <div class="article-meta">Updated Feb 2026 · 12 min read</div>
-        <p class="article-intro">Bipolar disorder exists on a spectrum. Understanding the different types helps clarify what you or a loved one might be experiencing and what treatment approaches work best.</p>
+    <main>
+        <div class="page-header">
+            <div class="page-eyebrow">Diagnosis</div>
+            <h1>Types of Bipolar Disorder</h1>
+            <p class="page-subtitle">Understanding the three main types of bipolar disorder—Bipolar I, Bipolar II, and Cyclothymia—is essential for proper diagnosis and treatment.</p>
+        </div>
 
-        <h2>Quick Comparison</h2>
-        <table class="comparison-table">
-            <thead>
-                <tr>
-                    <th>Type</th>
-                    <th>Manic Episodes</th>
-                    <th>Depressive Episodes</th>
-                    <th>Duration Criteria</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Bipolar I</strong></td>
-                    <td>Full mania (required)</td>
-                    <td>Common but not required</td>
-                    <td>Mania ≥7 days or hospitalization</td>
-                </tr>
-                <tr>
-                    <td><strong>Bipolar II</strong></td>
-                    <td>Hypomania only</td>
-                    <td>Required (major)</td>
-                    <td>Hypomania ≥4 days</td>
-                </tr>
-                <tr>
-                    <td><strong>Cyclothymia</strong></td>
-                    <td>Hypomanic symptoms</td>
-                    <td>Depressive symptoms</td>
-                    <td>2+ years of fluctuation</td>
-                </tr>
-            </tbody>
-        </table>
+        <section class="section">
+            <h2>Overview of Bipolar Types</h2>
+            <p>Bipolar disorder exists on a spectrum. The three main types are distinguished primarily by the severity and duration of manic and depressive episodes.</p>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Bipolar I</th>
+                        <th>Bipolar II</th>
+                        <th>Cyclothymia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Mania</strong></td>
+                        <td>Full manic episodes (≥7 days)</td>
+                        <td>Hypomania only (≥4 days)</td>
+                        <td>Hypomanic symptoms</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Depression</strong></td>
+                        <td>Common but not required</td>
+                        <td>Required (≥2 weeks)</td>
+                        <td>Depressive symptoms</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Duration</strong></td>
+                        <td>Episodes, not chronic</td>
+                        <td>Episodes, not chronic</td>
+                        <td>Chronic (≥2 years)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Severity</strong></td>
+                        <td>Most severe mania</td>
+                        <td>Milder highs, severe lows</td>
+                        <td>Less severe throughout</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Psychosis</strong></td>
+                        <td>Possible during mania</td>
+                        <td>Not in hypomania</td>
+                        <td>No</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-        <h2>Bipolar I Disorder</h2>
-        <div class="type-detail">
-            <h3>The Classic Form</h3>
-            <p><span class="key">Defining feature:</span> At least one manic episode lasting 7+ days (or any duration if hospitalization is required).</p>
-            <p>Bipolar I is characterized by full manic episodes—periods of extremely elevated mood, energy, and activity that represent a clear change from normal behavior. These episodes can include:</p>
+        <section class="section">
+            <div class="type-card">
+                <h3>Bipolar I Disorder</h3>
+                <p>Bipolar I disorder is defined by manic episodes that last at least 7 days, or by manic symptoms that are so severe that immediate hospital care is needed. Depressive episodes occur as well, typically lasting at least 2 weeks.</p>
+                
+                <h4 style="font-weight: 600; margin: 20px 0 12px; color: var(--text-primary);">Diagnostic Criteria (DSM-5)</h4>
+                <ul>
+                    <li>At least one manic episode lasting ≥7 days (or any duration if hospitalization required)</li>
+                    <li>Manic episode not better explained by schizoaffective disorder</li>
+                    <li>May include hypomanic or major depressive episodes</li>
+                </ul>
+                
+                <h4 style="font-weight: 600; margin: 20px 0 12px; color: var(--text-primary);">Key Features</h4>
+                <ul>
+                    <li>Manic episodes may include psychotic features (delusions, hallucinations)</li>
+                    <li>Episodes often severe enough to cause significant impairment</li>
+                    <li>May require hospitalization to prevent harm</li>
+                    <li>Affects men and women equally</li>
+                </ul>
+            </div>
+
+            <div class="type-card">
+                <h3>Bipolar II Disorder</h3>
+                <p>Bipolar II disorder is defined by a pattern of depressive episodes and hypomanic episodes, but not the full-blown manic episodes characteristic of Bipolar I. It is not a "milder" form of bipolar disorder—the depression is often more frequent and longer-lasting.</p>
+                
+                <h4 style="font-weight: 600; margin: 20px 0 12px; color: var(--text-primary);">Diagnostic Criteria (DSM-5)</h4>
+                <ul>
+                    <li>At least one hypomanic episode lasting ≥4 consecutive days</li>
+                    <li>At least one major depressive episode lasting ≥2 weeks</li>
+                    <li>No history of manic episodes</li>
+                </ul>
+                
+                <h4 style="font-weight: 600; margin: 20px 0 12px; color: var(--text-primary);">Key Features</h4>
+                <ul>
+                    <li>Hypomania may feel good and boost productivity</li>
+                    <li>Depression is typically the predominant mood state</li>
+                    <li>Higher risk of suicide attempts than Bipolar I</li>
+                    <li>Often misdiagnosed as unipolar depression</li>
+                    <li>More common in women</li>
+                </ul>
+            </div>
+
+            <div class="type-card">
+                <h3>Cyclothymic Disorder (Cyclothymia)</h3>
+                <p>Cyclothymia is a milder form of bipolar disorder involving chronic fluctuating mood with periods of hypomanic and depressive symptoms. Symptoms don't meet the full criteria for hypomanic or depressive episodes.</p>
+                
+                <h4 style="font-weight: 600; margin: 20px 0 12px; color: var(--text-primary);">Diagnostic Criteria (DSM-5)</h4>
+                <ul>
+                    <li>Periods of hypomanic symptoms and depressive symptoms for at least 2 years (1 year in children/adolescents)</li>
+                    <li>Symptoms present at least half the time</li>
+                    <li>Never without symptoms for more than 2 months</li>
+                    <li>Symptoms never meet criteria for major depressive, manic, or hypomanic episode</li>
+                </ul>
+                
+                <h4 style="font-weight: 600; margin: 20px 0 12px; color: var(--text-primary);">Key Features</h4>
+                <ul>
+                    <li>Chronic, persistent mood instability</li>
+                    <li>Risk of developing Bipolar I or II (15-50%)</li>
+                    <li>Often goes undiagnosed or dismissed as "moodiness"</li>
+                    <li>Can significantly impact quality of life</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Other Specified and Unspecified Bipolar Disorders</h2>
+            <p>Some people experience bipolar symptoms that don't fit neatly into the three main categories. The DSM-5 includes:</p>
+            
+            <h3>Other Specified Bipolar Disorder</h3>
+            <p>This diagnosis applies when symptoms cause significant distress but don't meet full criteria for any specific bipolar type. Examples include:</p>
             <ul>
-                <li>Feeling "high" or euphoric for extended periods</li>
-                <li>Severe irritability</li>
-                <li>Sleeping very little (3 hours) yet feeling energized</li>
-                <li>Racing thoughts and rapid speech</li>
-                <li>Grandiose beliefs (e.g., special powers or importance)</li>
-                <li>Impulsive, risky behavior (spending sprees, sexual indiscretion, poor business decisions)</li>
-                <li>In severe cases, psychotic features (delusions, hallucinations)</li>
+                <li>Short-duration hypomanic episodes (2-3 days) with major depression</li>
+                <li>Hypomanic episodes without prior major depression</li>
+                <li>Short-duration cyclothymia (less than 24 months)</li>
             </ul>
-            <p>Most people with Bipolar I also experience depressive episodes, but depression isn't required for diagnosis. The manic episode alone is sufficient.</p>
-        </div>
+            
+            <h3>Unspecified Bipolar Disorder</h3>
+            <p>Used when there's insufficient information for a specific diagnosis, but clear bipolar symptoms are present.</p>
+        </section>
 
-        <h2>Bipolar II Disorder</h2>
-        <div class="type-detail">
-            <h3>The Underdiagnosed Form</h3>
-            <p><span class="key">Defining feature:</span> Hypomanic episodes (less severe than mania) plus major depressive episodes. Never a full manic episode.</p>
-            <p>Bipolar II is often misdiagnosed as major depression because people usually seek help during depressive episodes, not when they're hypomanic (which often feels good). Key characteristics:</p>
+        <section class="section">
+            <h2>Which Type Do I Have?</h2>
+            <p>Only a qualified mental health professional can diagnose bipolar disorder. Diagnosis is based on:</p>
             <ul>
-                <li>Hypomania: Elevated mood and energy, but still functioning. Others notice you're "not yourself," but it doesn't severely impair work or relationships.</li>
-                <li>More time depressed: The depression in Bipolar II can be as severe as in Bipolar I, and people often spend significantly more time depressed than hypomanic.</li>
-                <li>Higher suicide risk: Despite being "milder," Bipolar II has a higher rate of suicide attempts, possibly because of the predominance of depression.</li>
+                <li>Comprehensive psychiatric evaluation</li>
+                <li>Detailed history of mood episodes</li>
+                <li>Duration and severity of symptoms</li>
+                <li>Ruling out other conditions</li>
             </ul>
-        </div>
+            
+            <div class="info-box">
+                <h3>💡 Important Note</h3>
+                <p>Many people with Bipolar II are initially misdiagnosed with unipolar depression because they seek help during depressive episodes. Always tell your doctor about any periods of elevated mood, increased energy, or decreased need for sleep—even if they felt productive or "good."</p>
+            </div>
+        </section>
 
-        <div class="info-box">
-            <h4>💡 Why Misdiagnosis Matters</h4>
-            <p>Treating Bipolar II with antidepressants alone (without a mood stabilizer) can trigger hypomania or rapid cycling. Proper diagnosis ensures proper treatment.</p>
-        </div>
-
-        <h2>Cyclothymic Disorder (Cyclothymia)</h2>
-        <div class="type-detail">
-            <h3>The Chronic Mild Form</h3>
-            <p><span class="key">Defining feature:</span> Chronic fluctuating mood with numerous periods of hypomanic and depressive symptoms that don't meet criteria for full episodes. Must persist for at least 2 years in adults.</p>
-            <p>Cyclothymia involves less severe symptoms but more constant mood instability:</p>
-            <ul>
-                <li>Never symptom-free for more than 2 months</li>
-                <li>Mood swings that others might dismiss as "just your personality"</li>
-                <li>Can progress to Bipolar I or II in 15-50% of cases</li>
-                <li>Often affects relationships and career due to unpredictability</li>
-            </ul>
-        </div>
-
-        <h2>Other Specified Bipolar Disorder</h2>
-        <p>This category includes bipolar presentations that don't fit neatly into the three main types. Examples:</p>
-        <ul>
-            <li>Hypomania lasting less than 4 days</li>
-            <li>Hypomanic episodes without a history of major depression</li>
-            <li>Recurrent hypomanic episodes without depressive episodes</li>
-            <li>Symptoms that cause distress but don't meet full criteria</li>
-        </ul>
-
-        <h2>How Are Types Diagnosed?</h2>
-        <p>Diagnosis is based on clinical evaluation, including:</p>
-        <ol>
-            <li><strong>Detailed history:</strong> Past mood episodes, duration, severity, and impact on functioning</li>
-            <li><strong>Family history:</strong> Bipolar disorder runs in families</li>
-            <li><strong>Rule out other causes:</strong> Thyroid conditions, substance use, and other psychiatric conditions can mimic bipolar</li>
-            <li><strong>Mood charting:</strong> Tracking daily mood over time can reveal patterns</li>
-        </ol>
-
-        <p>There's no blood test or brain scan that diagnoses bipolar disorder. It requires a comprehensive evaluation by a qualified mental health professional.</p>
-
-        <h2>Does Type Matter for Treatment?</h2>
-        <p>Yes, type influences treatment approach:</p>
-        <ul>
-            <li><strong>Bipolar I:</strong> Mood stabilizers (lithium) and/or atypical antipsychotics are typically first-line. Antidepressants used cautiously.</li>
-            <li><strong>Bipolar II:</strong> Mood stabilizers preferred. Some evidence for lamotrigine for depression. Antidepressants carefully considered with mood stabilizer coverage.</li>
-            <li><strong>Cyclothymia:</strong> May be managed with lower doses of mood stabilizers. Psychotherapy plays a larger role.</li>
-        </ul>
-
-        <p>Regardless of type, all forms benefit from psychotherapy, lifestyle management (sleep, stress, routine), and ongoing monitoring.</p>
-    </article>
+    </main>
 
     <footer>
         <div class="footer-inner">
-            <p>© 2026 bipolar.md · Part of the <a href="https://thrive.md">thrive.md</a> health network</p>
-            <p style="margin-top: 12px; font-size: 12px;">This website provides general health information. It is not a substitute for professional medical advice.</p>
+            <p>© 2026 bipolar.md · Part of <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a></p>
+            <p style="margin-top: 8px; font-size: 12px;">Information based on DSM-5 criteria and clinical guidelines. This is not medical advice. Always consult a mental health professional.</p>
         </div>
     </footer>
-<p style="text-align:center;color:#64748b;font-size:12px;padding:20px;">Last reviewed: February 2026</p></body>
+</body>
 </html>

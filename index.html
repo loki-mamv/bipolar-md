@@ -2,353 +2,1489 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="ai-content" content="allowed">
-    <meta name="ai-training" content="allowed">
-    <meta name="ai-topic" content="bipolar disorder, mental health, mood disorders">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bipolar Disorder Guide — bipolar.md</title>
-    <meta name="description" content="Evidence-based information about bipolar disorder. Understand symptoms, types, treatment options, and living well with bipolar.">
-    <meta name="keywords" content="bipolar disorder, bipolar 1, bipolar 2, manic depression, mood episodes, bipolar treatment">
+    <title>Bipolar Disorder — Types, Symptoms & Treatment Information</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Evidence-based information about bipolar disorder including types (I, II, cyclothymia), symptoms of mania and depression, treatment options, and living strategies.">
+    <meta name="keywords" content="bipolar disorder, manic depression, bipolar I, bipolar II, cyclothymia, mood disorder, mania, depression, mental health, lithium, mood stabilizers">
+    <meta name="author" content="bipolar.md">
     <link rel="canonical" href="https://bipolar.md/">
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bipolar.md/">
-    <meta property="og:title" content="Bipolar Disorder Guide — bipolar.md">
-    <meta property="og:description" content="Understanding bipolar disorder: symptoms, types, treatment, and management.">
+    <meta property="og:title" content="Bipolar Disorder — Types, Symptoms & Treatment Information">
+    <meta property="og:description" content="Evidence-based information about bipolar disorder types, symptoms, and treatment options.">
+    <meta property="og:site_name" content="bipolar.md">
+    
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Health Guide">
+    <meta name="twitter:url" content="https://bipolar.md/">
+    <meta name="twitter:title" content="Bipolar Disorder — Types, Symptoms & Treatment Information">
+    <meta name="twitter:site" content="@thrivemd">
+    <meta name="twitter:description" content="Evidence-based information about bipolar disorder types, symptoms, and treatment.">
+    
+    <!-- AI/LLM Meta Tags -->
+    <meta name="ai-content" content="evidence-based health information">
+    <meta name="ai-training" content="allowed">
+    <meta name="ai-topic" content="bipolar disorder, mental health, mood disorders, psychiatry">
+    <meta name="ai-audience" content="patients, caregivers, healthcare providers">
+    <meta name="ai-use" content="education, research, clinical support">
+    
+    <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "MedicalWebPage",
-      "name": "Bipolar Disorder Guide",
-      "description": "Comprehensive guide to understanding and managing bipolar disorder.",
-      "url": "https://bipolar.md/",
-      "medicalAudience": {"@type": "MedicalAudience", "audienceType": "Patient"}
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://thrive.md/#organization",
+          "name": "thrive.md",
+          "url": "https://thrive.md",
+          "description": "A network of premium health domains providing evidence-based medical information."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://bipolar.md/#website",
+          "url": "https://bipolar.md",
+          "name": "bipolar.md — Bipolar Disorder Information",
+          "publisher": {"@id": "https://thrive.md/#organization"},
+          "isPartOf": {"@id": "https://thrive.md/#organization"}
+        },
+        {
+          "@type": "MedicalWebPage",
+          "@id": "https://bipolar.md/#webpage",
+          "name": "Bipolar Disorder: Types, Symptoms, and Treatment",
+          "description": "Comprehensive evidence-based information about bipolar disorder, including bipolar I, bipolar II, and cyclothymia, symptoms of mania and depression, and treatment options.",
+          "url": "https://bipolar.md/",
+          "isPartOf": {"@id": "https://bipolar.md/#website"},
+          "lastReviewed": "2026-02-06",
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "thrive.md Clinical Advisory Team"
+          },
+          "mainEntity": {
+            "@type": "MedicalCondition",
+            "name": "Bipolar Disorder",
+            "alternateName": ["Manic Depression", "Manic-Depressive Illness", "Bipolar Affective Disorder"],
+            "description": "Bipolar disorder is a mental health condition characterized by extreme mood swings that include emotional highs (mania or hypomania) and lows (depression). These mood episodes can affect sleep, energy, activity, judgment, behavior, and the ability to think clearly.",
+            "code": {
+              "@type": "MedicalCode",
+              "code": "F31",
+              "codingSystem": "ICD-10"
+            },
+            "signOrSymptom": [
+              {"@type": "MedicalSignOrSymptom", "name": "Manic episodes"},
+              {"@type": "MedicalSignOrSymptom", "name": "Depressive episodes"},
+              {"@type": "MedicalSignOrSymptom", "name": "Decreased need for sleep"},
+              {"@type": "MedicalSignOrSymptom", "name": "Racing thoughts"},
+              {"@type": "MedicalSignOrSymptom", "name": "Impulsive behavior"}
+            ],
+            "possibleTreatment": [
+              {"@type": "Drug", "name": "Lithium"},
+              {"@type": "Drug", "name": "Valproate"},
+              {"@type": "Drug", "name": "Lamotrigine"},
+              {"@type": "Drug", "name": "Quetiapine"},
+              {"@type": "TherapeuticProcedure", "name": "Cognitive Behavioral Therapy"},
+              {"@type": "TherapeuticProcedure", "name": "Psychoeducation"}
+            ],
+            "epidemiology": "Affects approximately 2.8% of adults in the United States annually. Lifetime prevalence is approximately 4.4%.",
+            "riskFactor": [
+              {"@type": "MedicalRiskFactor", "name": "Family history of bipolar disorder"},
+              {"@type": "MedicalRiskFactor", "name": "High stress"},
+              {"@type": "MedicalRiskFactor", "name": "Substance abuse"},
+              {"@type": "MedicalRiskFactor", "name": "Traumatic experiences"}
+            ]
+          },
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": ["h1", ".stat-number", ".hero-subtitle"]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://bipolar.md/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is bipolar disorder?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Bipolar disorder is a chronic mental health condition characterized by extreme mood swings that include emotional highs (mania or hypomania) and lows (depression). It affects approximately 2.8% of U.S. adults and typically develops in late adolescence or early adulthood. The condition is highly treatable with medication and therapy, though it requires lifelong management."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between Bipolar I and Bipolar II?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Bipolar I disorder involves manic episodes lasting at least 7 days (or severe enough to require hospitalization), often followed by depressive episodes lasting at least 2 weeks. Bipolar II disorder involves hypomanic episodes (less severe than full mania) lasting at least 4 days, along with major depressive episodes. Bipolar II is not a milder form—the depressive episodes are often more frequent and longer-lasting."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can bipolar disorder be cured?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Bipolar disorder is a lifelong condition that cannot be cured, but it can be effectively managed with proper treatment. Most people with bipolar disorder can achieve significant symptom relief with mood stabilizers, therapy, and lifestyle modifications. With consistent treatment, many individuals lead full, productive lives. Early intervention and adherence to treatment plans are key to long-term stability."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What medications are used to treat bipolar disorder?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Treatment typically involves mood stabilizers (lithium, valproate, carbamazepine), atypical antipsychotics (quetiapine, olanzapine, aripiprazole, lurasidone), and sometimes anticonvulsants (lamotrigine). Antidepressants may be used cautiously alongside mood stabilizers for depressive episodes, as they can trigger mania when used alone. The choice of medication depends on the type of bipolar disorder, predominant symptoms, and individual response."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What triggers bipolar episodes?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Common triggers include sleep disruption (both too little and too much), high stress, substance use (especially stimulants and alcohol), major life changes, seasonal changes, medication non-adherence, and irregular daily routines. Identifying personal triggers through mood tracking and working with a mental health provider to develop coping strategies is an important part of managing the condition."
+              }
+            }
+          ]
+        }
+      ]
     }
     </script>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%238b5cf6' text-anchor='middle'%3E.md%3C/text%3E%3C/svg%3E">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%237c3aed' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-primary: #ffffff;
             --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
             --text-primary: #0f172a;
             --text-secondary: #475569;
             --text-muted: #94a3b8;
-            --accent: #8b5cf6;
-            --accent-dark: #7c3aed;
+            --accent: #7c3aed;
+            --accent-dark: #6d28d9;
             --accent-light: #ede9fe;
             --border: #e2e8f0;
             --font-display: 'Source Serif 4', Georgia, serif;
             --font-body: 'Inter', -apple-system, sans-serif;
         }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: var(--font-body); background: var(--bg-primary); color: var(--text-primary); line-height: 1.7; }
-        
-        header { background: var(--bg-primary); border-bottom: 1px solid var(--border); padding: 16px 24px; position: sticky; top: 0; z-index: 100; }
-        .header-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-family: var(--font-display); font-size: 24px; font-weight: 600; color: var(--text-primary); text-decoration: none; }
-        .logo span { color: var(--accent); }
-        nav a { color: var(--text-secondary); text-decoration: none; margin-left: 24px; font-size: 15px; font-weight: 500; }
-        nav a:hover { color: var(--accent); }
-        
-        .hero { padding: 80px 24px; text-align: center; background: linear-gradient(180deg, var(--accent-light) 0%, var(--bg-primary) 100%); }
-        .hero h1 { font-family: var(--font-display); font-size: clamp(36px, 6vw, 56px); font-weight: 700; margin-bottom: 20px; line-height: 1.1; }
-        .hero p { font-size: 20px; color: var(--text-secondary); max-width: 600px; margin: 0 auto 32px; }
-        
-        .crisis-banner { background: #fef2f2; border: 1px solid #fecaca; border-radius: 12px; padding: 20px 24px; max-width: 800px; margin: -40px auto 40px; text-align: center; }
-        .crisis-banner h3 { color: #b91c1c; font-size: 16px; margin-bottom: 8px; }
-        .crisis-banner p { color: #7f1d1d; font-size: 14px; margin: 0; }
-        .crisis-banner a { color: #b91c1c; font-weight: 600; }
-        
-        .types { max-width: 1100px; margin: 0 auto; padding: 60px 24px; }
-        .types h2 { font-family: var(--font-display); font-size: 32px; text-align: center; margin-bottom: 40px; }
-        .types-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
-        .type-card { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 16px; padding: 32px; }
-        .type-card h3 { font-family: var(--font-display); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
-        .type-card h3 span { font-size: 28px; }
-        .type-card p { color: var(--text-secondary); margin-bottom: 16px; }
-        .type-card ul { margin: 0; padding-left: 20px; color: var(--text-secondary); }
-        .type-card li { margin-bottom: 8px; }
-        
-        .symptoms { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
-        .symptoms h2 { font-family: var(--font-display); font-size: 32px; text-align: center; margin-bottom: 40px; }
-        .symptom-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
-        .symptom-box { background: var(--bg-secondary); border-radius: 16px; padding: 28px; }
-        .symptom-box h3 { font-size: 20px; margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
-        .symptom-box.mania { border-top: 4px solid #f59e0b; }
-        .symptom-box.depression { border-top: 4px solid #3b82f6; }
-        .symptom-box ul { margin: 0; padding-left: 20px; }
-        .symptom-box li { margin-bottom: 10px; color: var(--text-secondary); }
-        
-        .treatment { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
-        .treatment h2 { font-family: var(--font-display); font-size: 32px; text-align: center; margin-bottom: 40px; }
-        .treatment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .treatment-card { background: var(--bg-secondary); border-radius: 12px; padding: 24px; border-left: 4px solid var(--accent); }
-        .treatment-card h4 { font-size: 18px; margin-bottom: 8px; }
-        .treatment-card p { color: var(--text-secondary); font-size: 15px; margin: 0; }
-        
-        .chat-widget { position: fixed; bottom: 24px; right: 24px; z-index: 1000; }
-        .chat-btn { width: 60px; height: 60px; border-radius: 50%; background: var(--accent); border: none; cursor: pointer; box-shadow: 0 4px 16px rgba(139,92,246,0.3); display: flex; align-items: center; justify-content: center; transition: transform 0.2s; }
-        .chat-btn:hover { transform: scale(1.1); }
-        .chat-btn svg { width: 28px; height: 28px; fill: white; }
-        .chat-panel { position: absolute; bottom: 72px; right: 0; width: 380px; max-height: 500px; background: white; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.15); display: none; flex-direction: column; overflow: hidden; }
-        .chat-panel.open { display: flex; }
-        .chat-header { background: var(--accent); color: white; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; }
-        .chat-header h4 { font-size: 16px; font-weight: 600; }
-        .chat-close { background: none; border: none; color: white; font-size: 24px; cursor: pointer; }
-        .chat-messages { flex: 1; padding: 20px; overflow-y: auto; min-height: 300px; }
-        .chat-message { margin-bottom: 16px; }
-        .chat-message.bot { background: var(--bg-secondary); padding: 12px 16px; border-radius: 12px 12px 12px 0; }
-        .chat-message.user { background: var(--accent); color: white; padding: 12px 16px; border-radius: 12px 12px 0 12px; margin-left: 40px; }
-        .chat-input { display: flex; padding: 16px; border-top: 1px solid var(--border); gap: 12px; }
-        .chat-input input { flex: 1; padding: 12px 16px; border: 1px solid var(--border); border-radius: 24px; font-size: 14px; }
-        .chat-input button { background: var(--accent); color: white; border: none; padding: 12px 20px; border-radius: 24px; font-weight: 600; cursor: pointer; }
-        
-        footer { background: var(--bg-secondary); border-top: 1px solid var(--border); padding: 48px 24px; margin-top: 60px; }
-        .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
-        .footer-brand p { font-size: 14px; color: var(--text-muted); margin-top: 12px; }
-        .footer-links h4 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
-        .footer-links a { display: block; color: var(--text-muted); text-decoration: none; font-size: 14px; margin-bottom: 10px; }
-        .footer-links a:hover { color: var(--accent); }
-        .footer-bottom { max-width: 1100px; margin: 32px auto 0; padding-top: 24px; border-top: 1px solid var(--border); font-size: 13px; color: var(--text-muted); text-align: center; }
-        
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+            transition: padding 0.4s ease;
+        }
+
+        /* Split-screen mode */
+        body.split-mode {
+            padding-right: 45%;
+        }
+        body.split-mode header {
+            right: 45%;
+        }
+        body.split-mode .chat-panel {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 45%;
+            height: 100vh;
+            background: var(--bg-secondary);
+            border-left: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            z-index: 200;
+            animation: slideIn 0.4s ease;
+        }
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        body.split-mode .chat-panel .chat-header {
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--border);
+            background: var(--bg-primary);
+        }
+        body.split-mode .chat-panel .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 24px;
+            padding-bottom: 16px;
+            display: block !important;
+            min-height: 0;
+        }
+        body.split-mode .chat-panel .chat-input-area {
+            padding: 16px 24px;
+            border-top: 1px solid var(--border);
+            background: var(--bg-primary);
+            flex-shrink: 0;
+        }
+        body.split-mode .chat-panel .qa-suggestions,
+        body.split-mode .chat-panel .chat-note {
+            display: none;
+        }
+        body.split-mode .chat-panel .chat-close {
+            display: flex;
+        }
+        body.split-mode .hero .chat-box {
+            display: none;
+        }
+        .chat-close {
+            display: none;
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 32px;
+            height: 32px;
+            border: none;
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: var(--text-muted);
+            transition: all 0.2s;
+        }
+        .chat-close:hover {
+            background: var(--border);
+            color: var(--text-primary);
+        }
+        @media (max-width: 900px) {
+            body.split-mode { padding-right: 0; }
+            body.split-mode header { right: 0; }
+            body.split-mode .chat-panel { width: 100%; }
+            body.split-mode .chat-panel .chat-messages {
+                padding-bottom: env(safe-area-inset-bottom, 16px);
+            }
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        nav {
+            display: flex;
+            gap: 32px;
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        /* Hero */
+        .hero {
+            padding: 140px 24px 80px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .hero-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(36px, 5vw, 48px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .hero-subtitle {
+            font-size: 19px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+
+        /* Chat Box */
+        .chat-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .chat-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .chat-status {
+            width: 10px;
+            height: 10px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        .chat-header-text {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .chat-header-sub {
+            font-size: 12px;
+            color: var(--text-muted);
+            font-weight: 400;
+            margin-left: 8px;
+        }
+
+        .chat-messages {
+            padding: 20px;
+            background: var(--bg-primary);
+            min-height: 0;
+            max-height: 350px;
+            overflow-y: auto;
+            display: none;
+        }
+        .chat-messages.active {
+            display: block;
+        }
+        .chat-messages.active:has(.chat-message) {
+            min-height: 80px;
+        }
+
+        .chat-message {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .chat-message:last-child {
+            margin-bottom: 0;
+        }
+
+        .chat-message.user {
+            flex-direction: row-reverse;
+        }
+
+        .chat-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--bg-tertiary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+            flex-shrink: 0;
+        }
+
+        .chat-message.assistant .chat-avatar {
+            background: var(--accent-light);
+            color: var(--accent-dark);
+        }
+
+        .chat-bubble {
+            background: var(--bg-secondary);
+            padding: 12px 16px;
+            border-radius: 12px;
+            border-top-left-radius: 4px;
+            max-width: 85%;
+            border: 1px solid var(--border);
+        }
+
+        .chat-message.user .chat-bubble {
+            background: var(--accent);
+            color: white;
+            border-color: transparent;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 4px;
+        }
+
+        .chat-bubble p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+
+        .chat-message.user .chat-bubble p {
+            color: white;
+        }
+
+        .chat-input-area {
+            padding: 16px 20px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            gap: 12px;
+        }
+
+        .chat-input {
+            flex: 1;
+            padding: 12px 16px;
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 14px;
+            color: var(--text-primary);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .chat-input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .chat-input:focus {
+            border-color: var(--accent);
+        }
+
+        .chat-send {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .chat-send:hover {
+            background: var(--accent-dark);
+        }
+
+        .chat-note {
+            font-size: 11px;
+            color: var(--text-muted);
+            padding: 12px 20px;
+            background: var(--bg-tertiary);
+            text-align: center;
+        }
+
+        .qa-suggestions {
+            padding: 8px 16px 12px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .qa-suggestions span {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            padding: 6px 16px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .qa-suggestions span:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: var(--accent-light);
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            padding: 48px 24px;
+        }
+
+        .stats-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+
+        .stat-source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 64px 24px;
+        }
+
+        .section {
+            margin-bottom: 64px;
+        }
+
+        .section-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            font-family: var(--font-display);
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        h3 {
+            font-family: var(--font-display);
+            font-size: 20px;
+            font-weight: 600;
+            margin: 28px 0 12px;
+            color: var(--text-primary);
+        }
+
+        .section > p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 32px 0;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .comparison-table thead {
+            background: var(--bg-secondary);
+        }
+
+        .comparison-table th {
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .comparison-table td {
+            padding: 12px 16px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Warning Box */
+        .warning-box {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-left: 4px solid #ef4444;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 32px 0;
+        }
+
+        .warning-box h3 {
+            font-family: var(--font-display);
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #991b1b;
+            margin-top: 0;
+        }
+
+        .warning-box p {
+            font-size: 14px;
+            color: #7f1d1d;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: var(--accent-light);
+            border: 1px solid #c4b5fd;
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 32px 0;
+        }
+
+        .info-box h3 {
+            font-family: var(--font-display);
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--accent-dark);
+            margin-top: 0;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            color: #5b21b6;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        /* Card Grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 32px 0;
+        }
+
+        .card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+        }
+
+        .card h4 {
+            font-family: var(--font-display);
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        .card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .card ul {
+            margin: 12px 0 0 20px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+        }
+
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .footer-brand .logo {
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        .footer-brand p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .footer-links h4 {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            display: block;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 8px;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            max-width: 1100px;
+            margin: 32px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .review-date {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+        }
+
+        /* Responsive */
         @media (max-width: 768px) {
             nav { display: none; }
-            .footer-inner { grid-template-columns: 1fr; }
-            .symptom-columns { grid-template-columns: 1fr; }
-            .chat-panel { width: calc(100vw - 48px); right: -12px; }
+            .stats-inner { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+            .footer-inner { grid-template-columns: 1fr; gap: 24px; }
+            .card-grid { grid-template-columns: 1fr; }
+            .hero {
+                padding: 100px 16px 40px;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+            .hero-subtitle {
+                font-size: 17px;
+                margin-bottom: 24px;
+            }
+            .chat-box {
+                border-radius: 10px;
+            }
+            .chat-input-area {
+                flex-direction: row !important;
+                align-items: flex-end;
+                padding: 12px 12px;
+                gap: 8px;
+            }
+            .chat-input-area .chat-input {
+                flex: 1;
+                border-radius: 20px;
+                padding: 10px 16px;
+                font-size: 16px;
+                min-height: 40px;
+            }
+            .chat-input-area .chat-send {
+                width: 40px;
+                height: 40px;
+                min-width: 40px;
+                border-radius: 50%;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+            .chat-input-area .chat-send span {
+                font-size: 0;
+            }
+            .chat-input-area .chat-send span::before {
+                content: '↑';
+                font-size: 20px;
+                font-weight: 700;
+            }
+            .qa-suggestions {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                padding-bottom: 4px;
+                scrollbar-width: none;
+            }
+            .qa-suggestions::-webkit-scrollbar { display: none; }
+            .qa-suggestions span {
+                flex-shrink: 0;
+                font-size: 12px;
+                padding: 5px 12px;
+            }
+            .chat-note {
+                font-size: 10px;
+                padding: 8px 16px;
+            }
+            .chat-messages {
+                max-height: none;
+            }
+            .comparison-table {
+                font-size: 12px;
+            }
+            .comparison-table th,
+            .comparison-table td {
+                padding: 8px 10px;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+
+        @supports (padding-bottom: env(safe-area-inset-bottom)) {
+            @media (max-width: 768px) {
+                .chat-note {
+                    padding-bottom: calc(8px + env(safe-area-inset-bottom));
+                }
+            }
         }
     </style>
 </head>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "What is bipolar disorder?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Bipolar disorder is a mental health condition causing extreme mood swings including emotional highs (mania) and lows (depression)."
-        }
-      }]
-    }
-    </script>
 <body>
+    <!-- Split-mode chat panel (hidden initially) -->
+    <div class="chat-panel" id="chat-panel" style="display: none;">
+        <button class="chat-close" onclick="closeSplitMode()">✕</button>
+        <div class="chat-header">
+            <div class="chat-status"></div>
+            <span class="chat-header-text">Ask about Bipolar Disorder<span class="chat-header-sub">— answers from clinical guidelines & research</span></span>
+        </div>
+        <div id="panel-messages" class="chat-messages"></div>
+        <div class="chat-input-area">
+            <textarea id="panel-input" class="chat-input" placeholder="Ask a follow-up question..." rows="1" style="resize:none;"></textarea>
+            <button id="panel-submit" class="chat-send" onclick="askQuestion()">
+                <span>Send</span>
+            </button>
+        </div>
+    </div>
+
     <header>
         <div class="header-inner">
             <a href="/" class="logo">bipolar<span>.md</span></a>
             <nav>
-                <a href="/">Home</a>
-                <a href="/blog.html">Articles</a>
-                <a href="/resources.html">Resources</a>
+                <a href="#ask" onclick="event.preventDefault(); activateSplitMode(); document.getElementById('panel-input').focus();">Ask</a>
+                <a href="/types.html">Types</a>
+                <a href="/symptoms.html">Symptoms</a>
+                <a href="/treatment.html">Treatment</a>
+                <a href="/living-with-bipolar.html">Living With</a>
+                <a href="/faq.html">FAQ</a>
             </nav>
         </div>
     </header>
 
     <section class="hero">
-        <h1>Understanding Bipolar Disorder</h1>
-        <p>Evidence-based information about bipolar disorder, its types, treatments, and strategies for living well.</p>
-    </section>
-
-    <div class="crisis-banner">
-        <h3>🆘 In Crisis?</h3>
-        <p>If you're experiencing a mental health emergency, please call <a href="tel:988">988</a> (Suicide & Crisis Lifeline) or go to your nearest emergency room.</p>
-    </div>
-
-    <section class="types">
-        <h2>Types of Bipolar Disorder</h2>
-        <div class="types-grid">
-            <div class="type-card">
-                <h3><span>🔴</span> Bipolar I</h3>
-                <p>Defined by manic episodes lasting at least 7 days (or severe enough to require hospitalization). Depressive episodes typically last 2+ weeks.</p>
-                <ul>
-                    <li>Full manic episodes (extreme highs)</li>
-                    <li>May include psychotic features</li>
-                    <li>Depressive episodes common but not required for diagnosis</li>
-                    <li>About 1% of population</li>
-                </ul>
-            </div>
-            <div class="type-card">
-                <h3><span>🟠</span> Bipolar II</h3>
-                <p>Characterized by hypomanic episodes (less severe than mania) and major depressive episodes. Often misdiagnosed as depression.</p>
-                <ul>
-                    <li>Hypomanic episodes (elevated but functional)</li>
-                    <li>More time spent depressed than hypomanic</li>
-                    <li>No full manic episodes</li>
-                    <li>About 0.4% of population</li>
-                </ul>
-            </div>
-            <div class="type-card">
-                <h3><span>🟡</span> Cyclothymia</h3>
-                <p>Chronic fluctuating mood involving periods of hypomanic and depressive symptoms that don't meet criteria for full episodes.</p>
-                <ul>
-                    <li>Symptoms for 2+ years</li>
-                    <li>Less severe but persistent</li>
-                    <li>Can progress to Bipolar I or II</li>
-                    <li>About 0.4-1% of population</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="symptoms">
-        <h2>Recognizing Episodes</h2>
-        <div class="symptom-columns">
-            <div class="symptom-box mania">
-                <h3>⬆️ Manic/Hypomanic Episodes</h3>
-                <ul>
-                    <li>Abnormally elevated or irritable mood</li>
-                    <li>Decreased need for sleep (feeling rested after 3 hours)</li>
-                    <li>Racing thoughts, rapid speech</li>
-                    <li>Increased goal-directed activity or agitation</li>
-                    <li>Inflated self-esteem or grandiosity</li>
-                    <li>Risky behavior (spending, sex, investments)</li>
-                    <li>Easily distracted</li>
-                </ul>
-            </div>
-            <div class="symptom-box depression">
-                <h3>⬇️ Depressive Episodes</h3>
-                <ul>
-                    <li>Persistent sad, empty, or hopeless mood</li>
-                    <li>Loss of interest in activities once enjoyed</li>
-                    <li>Significant weight/appetite changes</li>
-                    <li>Sleeping too much or too little</li>
-                    <li>Fatigue or loss of energy</li>
-                    <li>Feelings of worthlessness or guilt</li>
-                    <li>Difficulty concentrating or making decisions</li>
-                    <li>Thoughts of death or suicide</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="treatment">
-        <h2>Treatment Approaches</h2>
-        <div class="treatment-grid">
-            <div class="treatment-card">
-                <h4>🏥 Mood Stabilizers</h4>
-                <p>Lithium, valproate, and carbamazepine help prevent manic and depressive episodes. Often first-line treatment.</p>
-            </div>
-            <div class="treatment-card">
-                <h4>💊 Atypical Antipsychotics</h4>
-                <p>Quetiapine, aripiprazole, olanzapine can treat acute episodes and provide maintenance. Often combined with mood stabilizers.</p>
-            </div>
-            <div class="treatment-card">
-                <h4>💬 Psychotherapy</h4>
-                <p>CBT, interpersonal therapy, and family-focused therapy help with coping, relationships, and recognizing early warning signs.</p>
-            </div>
-            <div class="treatment-card">
-                <h4>🌙 Lifestyle Management</h4>
-                <p>Regular sleep schedule, stress management, avoiding alcohol/drugs, and routine are crucial for stability.</p>
-            </div>
-        </div>
-    </section>
-
-    <div class="chat-widget">
-        <button class="chat-btn" onclick="toggleChat()" aria-label="Open chat">
-            <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
-        </button>
-        <div class="chat-panel" id="chatPanel">
+        <div class="hero-eyebrow">Mental Health Guide</div>
+        <h1>Bipolar Disorder: Understanding Mood Episodes</h1>
+        <p class="hero-subtitle">Bipolar disorder is a chronic mental health condition characterized by extreme mood swings—from emotional highs (mania or hypomania) to lows (depression). With proper treatment and support, most people with bipolar disorder can lead fulfilling, productive lives.</p>
+        
+        <div class="chat-box" id="ask">
             <div class="chat-header">
-                <h4>Ask about bipolar disorder</h4>
-                <button class="chat-close" onclick="toggleChat()">×</button>
+                <div class="chat-status"></div>
+                <span class="chat-header-text">Ask about Bipolar Disorder<span class="chat-header-sub">— answers from clinical guidelines & research</span></span>
             </div>
-            <div class="chat-messages" id="chatMessages">
-                <div class="chat-message bot">Hi! I can answer questions about bipolar disorder. What would you like to know?</div>
+            <div id="chat-messages" class="chat-messages active">
+                <div class="chat-message assistant">
+                    <div class="chat-avatar">MD</div>
+                    <div class="chat-bubble"><p>I can answer questions about bipolar disorder based on DSM-5 diagnostic criteria, clinical guidelines, and peer-reviewed research. Ask me about symptoms, types, treatment options, or living strategies.</p></div>
+                </div>
             </div>
-            <div class="chat-input">
-                <input type="text" id="chatInput" placeholder="Type your question..." onkeypress="if(event.key==='Enter')sendMessage()">
-                <button onclick="sendMessage()">Send</button>
+            <div class="chat-input-area">
+                <textarea id="qa-input" class="chat-input" placeholder="Ask about bipolar disorder..." rows="1" style="resize:none;"></textarea>
+                <button id="qa-submit" class="chat-send" onclick="askQuestion()">
+                    <span>Send</span>
+                </button>
+            </div>
+            <div id="qa-suggestions" class="qa-suggestions">
+                <span onclick="askSuggestion(this)">What's the difference between Bipolar I and II?</span>
+                <span onclick="askSuggestion(this)">What triggers episodes?</span>
+                <span onclick="askSuggestion(this)">Is it curable?</span>
+            </div>
+            <div class="chat-note">Answers based on DSM-5 criteria, clinical guidelines, and peer-reviewed research. Always consult a mental health professional for diagnosis and treatment.</div>
+        </div>
+    </section>
+
+    <section class="stats-bar">
+        <div class="stats-inner">
+            <div class="stat">
+                <div class="stat-number">2.8%</div>
+                <div class="stat-label">U.S. adults affected annually</div>
+                <div class="stat-source">NIMH, 2023</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">25 years</div>
+                <div class="stat-label">Average age of onset</div>
+                <div class="stat-source">World Health Organization</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">80-90%</div>
+                <div class="stat-label">Respond to treatment with medication</div>
+                <div class="stat-source">American Psychiatric Association</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">6th</div>
+                <div class="stat-label">Leading cause of disability worldwide</div>
+                <div class="stat-source">WHO Global Burden of Disease</div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <main>
+        <div class="warning-box">
+            <h3>⚠️ Crisis Resources</h3>
+            <p>If you or someone you know is in crisis, contact the <strong>988 Suicide & Crisis Lifeline</strong> by calling or texting 988. For emergencies, call 911 or go to your nearest emergency room. You are not alone—help is available 24/7.</p>
+        </div>
+
+        <section class="section">
+            <div class="section-label">Overview</div>
+            <h2>What is Bipolar Disorder?</h2>
+            <p>Bipolar disorder (formerly called manic-depressive illness) is a brain disorder that causes unusual shifts in mood, energy, activity levels, and the ability to carry out day-to-day tasks. These shifts are far more severe than the normal ups and downs everyone experiences.</p>
+            <p>People with bipolar disorder experience periods of unusually intense emotion, changes in sleep patterns and activity levels, and uncharacteristic behaviors—often without recognizing their likely harmful or undesirable effects. These distinct periods are called "mood episodes."</p>
+            <p><strong>Mood episodes are drastically different</strong> from the moods and behaviors typical for the person. During an episode, symptoms last most of the day, nearly every day, for at least several days or weeks. Symptoms can also sometimes occur together in "mixed features" episodes.</p>
+            
+            <div class="info-box">
+                <h3>💡 Key Distinction</h3>
+                <p>Bipolar disorder is not the same as having mood swings. Everyone has ups and downs, but bipolar episodes are severe, prolonged, and significantly impair daily functioning or require hospitalization.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-label">Types</div>
+            <h2>Types of Bipolar Disorder</h2>
+            <p>There are three main types of bipolar disorder. All involve clear changes in mood, energy, and activity levels that differ from the person's usual behavior.</p>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Manic Episodes</th>
+                        <th>Depressive Episodes</th>
+                        <th>Key Features</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Bipolar I</strong></td>
+                        <td>Full mania (≥7 days or hospitalization)</td>
+                        <td>Common but not required</td>
+                        <td>Most severe manic symptoms; may include psychosis</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bipolar II</strong></td>
+                        <td>Hypomania only (≥4 days)</td>
+                        <td>Required (≥2 weeks)</td>
+                        <td>Milder highs, but depression often more severe and frequent</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cyclothymia</strong></td>
+                        <td>Hypomanic symptoms</td>
+                        <td>Depressive symptoms</td>
+                        <td>Chronic (≥2 years), less severe but persistent mood cycling</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="font-size: 13px; color: var(--text-muted); margin-top: 12px;">Based on DSM-5 diagnostic criteria. A qualified mental health professional is required for accurate diagnosis.</p>
+        </section>
+
+        <section class="section">
+            <div class="section-label">Symptoms</div>
+            <h2>Recognizing Mood Episodes</h2>
+            <p>Bipolar disorder is characterized by two main types of mood episodes: manic (or hypomanic) episodes and depressive episodes. Recognizing the symptoms of each is crucial for early intervention.</p>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <h4>🔥 Manic Episode Symptoms</h4>
+                    <ul>
+                        <li>Feeling unusually "high," elated, or irritable</li>
+                        <li>Decreased need for sleep (feeling rested after 3 hours)</li>
+                        <li>Racing thoughts, rapid speech</li>
+                        <li>Being easily distracted</li>
+                        <li>Increased goal-directed activity</li>
+                        <li>Risky behavior (spending sprees, risky sex, impulsive decisions)</li>
+                        <li>Inflated self-esteem or grandiosity</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>🌧️ Depressive Episode Symptoms</h4>
+                    <ul>
+                        <li>Feeling sad, empty, hopeless, or tearful</li>
+                        <li>Loss of interest in almost all activities</li>
+                        <li>Significant weight loss/gain or appetite changes</li>
+                        <li>Sleeping too much or too little</li>
+                        <li>Fatigue or loss of energy</li>
+                        <li>Feelings of worthlessness or excessive guilt</li>
+                        <li>Difficulty thinking, concentrating, or making decisions</li>
+                        <li>Thoughts of death or suicide</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h3>Hypomania vs. Mania</h3>
+            <p><strong>Hypomania</strong> involves the same symptoms as mania but is less severe and shorter in duration (at least 4 days vs. 7 days). While hypomanic episodes don't cause the severe impairment that mania does, they are still a significant change from normal behavior and noticeable to others.</p>
+            <p>People experiencing hypomania may feel great and highly productive. However, without proper treatment, hypomanic episodes can develop into full mania or severe depression.</p>
+            
+            <h3>Mixed Features</h3>
+            <p>Some people experience "mixed features"—having symptoms of mania and depression at the same time. For example, feeling very energized while also feeling hopeless. Mixed episodes can be particularly dangerous because the combination of high energy and depressive thoughts increases suicide risk.</p>
+        </section>
+
+        <section class="section">
+            <div class="section-label">Treatment</div>
+            <h2>Treatment Options</h2>
+            <p>Bipolar disorder is a lifelong condition, but symptoms can be managed effectively with the right treatment plan. Treatment typically involves a combination of medication, psychotherapy, and lifestyle modifications.</p>
+            
+            <h3>Medications</h3>
+            <p>Medications are the cornerstone of bipolar treatment. The main categories include:</p>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Medication Class</th>
+                        <th>Examples</th>
+                        <th>Primary Use</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Mood Stabilizers</strong></td>
+                        <td>Lithium, Valproate, Carbamazepine</td>
+                        <td>Prevent mood episodes, treat mania</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Atypical Antipsychotics</strong></td>
+                        <td>Quetiapine, Olanzapine, Aripiprazole, Lurasidone</td>
+                        <td>Mania, depression, maintenance</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Anticonvulsants</strong></td>
+                        <td>Lamotrigine</td>
+                        <td>Depression prevention, maintenance</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Antidepressants</strong></td>
+                        <td>SSRIs, SNRIs (used cautiously)</td>
+                        <td>Depressive episodes (with mood stabilizer)</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="warning-box">
+                <h3>⚠️ Antidepressant Caution</h3>
+                <p>Antidepressants used alone can trigger manic episodes in people with bipolar disorder. They should only be prescribed alongside a mood stabilizer or antipsychotic, and under close medical supervision.</p>
+            </div>
+            
+            <h3>Psychotherapy</h3>
+            <p>Therapy, in combination with medication, is highly effective for bipolar disorder:</p>
+            <ul>
+                <li><strong>Cognitive Behavioral Therapy (CBT):</strong> Helps identify and change negative thought patterns and behaviors</li>
+                <li><strong>Interpersonal and Social Rhythm Therapy (IPSRT):</strong> Focuses on stabilizing daily routines and sleep patterns</li>
+                <li><strong>Family-Focused Therapy:</strong> Involves family members in treatment to improve communication and support</li>
+                <li><strong>Psychoeducation:</strong> Learning about the illness to recognize warning signs and develop coping strategies</li>
+            </ul>
+            
+            <h3>Other Treatments</h3>
+            <p><strong>Electroconvulsive Therapy (ECT)</strong> may be recommended for severe depression or mania that doesn't respond to medications, or when rapid response is needed. Despite its portrayal in media, modern ECT is safe and highly effective.</p>
+        </section>
+
+        <section class="section">
+            <div class="section-label">Living Well</div>
+            <h2>Living with Bipolar Disorder</h2>
+            <p>With proper treatment and self-management strategies, people with bipolar disorder can lead full, productive lives. Here are evidence-based strategies for maintaining stability:</p>
+            
+            <h3>Lifestyle Strategies</h3>
+            <ul>
+                <li><strong>Maintain regular sleep schedules:</strong> Go to bed and wake up at consistent times, even on weekends</li>
+                <li><strong>Track your moods:</strong> Use apps or journals to identify patterns and early warning signs</li>
+                <li><strong>Avoid alcohol and drugs:</strong> Substances can trigger episodes and interfere with medications</li>
+                <li><strong>Exercise regularly:</strong> Physical activity helps regulate mood and improve sleep</li>
+                <li><strong>Build a support network:</strong> Stay connected with family, friends, and support groups</li>
+                <li><strong>Reduce stress:</strong> Practice mindfulness, set realistic goals, and learn to say no</li>
+            </ul>
+            
+            <h3>Recognizing Early Warning Signs</h3>
+            <p>Learning to recognize your personal warning signs of an impending episode is one of the most valuable skills you can develop:</p>
+            <ul>
+                <li><strong>For mania:</strong> Decreased need for sleep, increased energy, racing thoughts, talking more than usual</li>
+                <li><strong>For depression:</strong> Social withdrawal, loss of interest, sleep changes, low energy</li>
+            </ul>
+            <p>When you notice warning signs, contact your treatment team immediately. Early intervention can prevent a full episode.</p>
+            
+            <div class="info-box">
+                <h3>📱 Mood Tracking Apps</h3>
+                <p>Apps like Daylio, eMoods, and Bearable can help you track mood patterns, sleep, medication adherence, and potential triggers—making it easier to share information with your care team.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-label">Causes</div>
+            <h2>What Causes Bipolar Disorder?</h2>
+            <p>The exact cause of bipolar disorder is unknown, but research suggests it results from a combination of factors:</p>
+            
+            <h3>Genetics</h3>
+            <p>Bipolar disorder tends to run in families. If you have a parent or sibling with bipolar disorder, you have a higher risk (about 10%) of developing it, compared to 2-3% in the general population. However, most people with a family history never develop the condition.</p>
+            
+            <h3>Brain Structure and Function</h3>
+            <p>Research using brain imaging shows subtle differences in brain structure and activity in people with bipolar disorder. These differences may help explain why treatments work and guide future research.</p>
+            
+            <h3>Environmental Triggers</h3>
+            <p>While genetics create vulnerability, environmental factors can trigger episodes:</p>
+            <ul>
+                <li>High stress or major life changes</li>
+                <li>Sleep disruption</li>
+                <li>Substance abuse</li>
+                <li>Traumatic experiences</li>
+                <li>Seasonal changes</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <div class="section-label">Diagnosis</div>
+            <h2>Getting Diagnosed</h2>
+            <p>There is no blood test or brain scan for bipolar disorder. Diagnosis is based on a comprehensive evaluation by a mental health professional, which typically includes:</p>
+            <ul>
+                <li><strong>Psychiatric assessment:</strong> Detailed interview about symptoms, history, and family mental health</li>
+                <li><strong>Mood charting:</strong> Tracking daily moods, sleep, and behaviors</li>
+                <li><strong>Physical exam:</strong> To rule out medical conditions that can mimic bipolar symptoms</li>
+                <li><strong>DSM-5 criteria:</strong> Symptoms must meet specific diagnostic criteria</li>
+            </ul>
+            
+            <h3>Challenges in Diagnosis</h3>
+            <p>Bipolar disorder is often misdiagnosed, particularly as unipolar depression (because people often seek help during depressive episodes, not manic ones). On average, it takes <strong>10 years</strong> from symptom onset to receive a correct diagnosis.</p>
+            <p>Be sure to tell your doctor about any past episodes of elevated mood, increased energy, or uncharacteristic behavior—even if they felt good at the time.</p>
+        </section>
+
+        <section class="section">
+            <div class="section-label">Research</div>
+            <h2>Ongoing Research</h2>
+            <p>Scientists are actively researching bipolar disorder to improve diagnosis and treatment:</p>
+            <ul>
+                <li><strong>Biomarker research:</strong> Identifying biological markers that could aid in diagnosis</li>
+                <li><strong>Genetics studies:</strong> Mapping genes associated with bipolar disorder</li>
+                <li><strong>New treatments:</strong> Investigating novel medications and brain stimulation therapies</li>
+                <li><strong>Personalized medicine:</strong> Matching treatments to individual patient characteristics</li>
+            </ul>
+            <p>To find clinical trials, visit <a href="https://clinicaltrials.gov" target="_blank" rel="noopener" style="color: var(--accent);">ClinicalTrials.gov</a> and search for "bipolar disorder."</p>
+        </section>
+
+        <section class="section">
+            <div class="section-label">Support</div>
+            <h2>Resources & Support</h2>
+            <p>Living with bipolar disorder is easier with the right support. Here are trusted resources:</p>
+            
+            <h3>Crisis Support</h3>
+            <ul>
+                <li><strong>988 Suicide & Crisis Lifeline:</strong> Call or text 988 (24/7)</li>
+                <li><strong>Crisis Text Line:</strong> Text HOME to 741741</li>
+                <li><strong>SAMHSA Helpline:</strong> 1-800-662-4357</li>
+            </ul>
+            
+            <h3>Organizations</h3>
+            <ul>
+                <li><a href="https://www.nimh.nih.gov/health/topics/bipolar-disorder" target="_blank" rel="noopener" style="color: var(--accent);">National Institute of Mental Health (NIMH)</a></li>
+                <li><a href="https://www.dbsalliance.org/" target="_blank" rel="noopener" style="color: var(--accent);">Depression and Bipolar Support Alliance (DBSA)</a></li>
+                <li><a href="https://www.nami.org/" target="_blank" rel="noopener" style="color: var(--accent);">National Alliance on Mental Illness (NAMI)</a></li>
+                <li><a href="https://www.mhanational.org/" target="_blank" rel="noopener" style="color: var(--accent);">Mental Health America</a></li>
+            </ul>
+            
+            <h3>For Family & Caregivers</h3>
+            <p>Supporting someone with bipolar disorder can be challenging. NAMI offers <a href="https://www.nami.org/Support-Education/Support-Groups/NAMI-Family-Support-Group" target="_blank" rel="noopener" style="color: var(--accent);">Family Support Groups</a> and the <a href="https://www.nami.org/Support-Education/Mental-Health-Education/NAMI-Family-to-Family" target="_blank" rel="noopener" style="color: var(--accent);">Family-to-Family</a> education program.</p>
+        </section>
+
+        <p class="review-date">Last reviewed: February 2026 | Medical review by thrive.md Clinical Advisory Team</p>
+    </main>
 
     <footer>
         <div class="footer-inner">
             <div class="footer-brand">
                 <a href="/" class="logo">bipolar<span>.md</span></a>
-                <p>Evidence-based bipolar disorder information. Not a substitute for professional medical advice.</p>
+                <p>Part of the <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a> health network. Evidence-based mental health information, reviewed by healthcare professionals.</p>
             </div>
             <div class="footer-links">
-                <h4>Learn</h4>
-                <a href="/types.html">Types</a>
+                <h4>Information</h4>
+                <a href="/types.html">Types of Bipolar</a>
                 <a href="/symptoms.html">Symptoms</a>
-                <a href="/treatment.html">Treatment</a>
-                <a href="/living-with.html">Living With</a>
+                <a href="/treatment.html">Treatment Options</a>
+                <a href="/faq.html">FAQ</a>
             </div>
             <div class="footer-links">
                 <h4>Resources</h4>
-                <a href="/blog.html">Articles</a>
-                <a href="/resources.html">Resources</a>
+                <a href="/living-with-bipolar.html">Living With Bipolar</a>
+                <a href="https://www.nimh.nih.gov/health/topics/bipolar-disorder" target="_blank" rel="noopener">NIMH Information</a>
+                <a href="https://www.dbsalliance.org/" target="_blank" rel="noopener">DBSA Support</a>
             </div>
             <div class="footer-links">
-                <h4>Network</h4>
-                <a href="https://thrive.md">thrive.md</a>
-                <a href="https://mental.md">mental.md</a>
-                <a href="https://depression.md">depression.md</a>
+                <h4>About</h4>
+                <a href="https://thrive.md/editorial-policy.html">Editorial Policy</a>
+                <a href="https://thrive.md/medical-review.html">Medical Review</a>
+                <a href="mailto:hello@thrive.md">Contact</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2026 bipolar.md · Part of the <a href="https://thrive.md">thrive.md</a> health network · <a href="tel:988">Crisis Line: 988</a></p>
-            <p style="margin-top: 12px; font-size: 12px;">This website provides general health information. It is not a substitute for professional medical advice, diagnosis, or treatment.</p>
+            <p>© 2026 bipolar.md · A <a href="https://thrive.md" style="color: var(--text-muted); text-decoration: none;">thrive.md</a> property</p>
+            <p><strong>Medical Disclaimer:</strong> This site provides information, not medical advice. Always consult a mental health professional.</p>
         </div>
     </footer>
 
     <script>
+        const QA_API = 'https://md-qa.md-health.workers.dev/ask';
+        const SESSION_ID = 'session_' + Math.random().toString(36).substr(2, 9);
         const TOPIC = 'bipolar';
-        function toggleChat() {
-            document.getElementById('chatPanel').classList.toggle('open');
+        
+        let splitModeActive = false;
+        
+        function getActiveMessagesDiv() {
+            return splitModeActive 
+                ? document.getElementById('panel-messages')
+                : document.getElementById('chat-messages');
         }
-        async function sendMessage() {
-            const input = document.getElementById('chatInput');
-            const messages = document.getElementById('chatMessages');
+        
+        function getActiveInput() {
+            return splitModeActive
+                ? document.getElementById('panel-input')
+                : document.getElementById('qa-input');
+        }
+        
+        function activateSplitMode() {
+            if (splitModeActive) return;
+            splitModeActive = true;
+            
+            document.body.classList.add('split-mode');
+            const panel = document.getElementById('chat-panel');
+            panel.style.display = 'flex';
+            
+            const heroMessages = document.getElementById('chat-messages');
+            const panelMessages = document.getElementById('panel-messages');
+            panelMessages.innerHTML = heroMessages.innerHTML;
+            panelMessages.classList.add('active');
+            
+            document.getElementById('panel-input').focus();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        function closeSplitMode() {
+            splitModeActive = false;
+            document.body.classList.remove('split-mode');
+            document.getElementById('chat-panel').style.display = 'none';
+            
+            const panelMessages = document.getElementById('panel-messages');
+            const heroMessages = document.getElementById('chat-messages');
+            heroMessages.innerHTML = panelMessages.innerHTML;
+            heroMessages.classList.add('active');
+        }
+
+        function addMessage(text, isUser = false) {
+            const messagesDiv = getActiveMessagesDiv();
+            messagesDiv.classList.add('active');
+            
+            const msgDiv = document.createElement('div');
+            msgDiv.className = `chat-message ${isUser ? 'user' : 'assistant'}`;
+            msgDiv.innerHTML = `
+                <div class="chat-avatar">${isUser ? 'You' : 'MD'}</div>
+                <div class="chat-bubble"><p>${text}</p></div>
+            `;
+            
+            messagesDiv.appendChild(msgDiv);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+            return msgDiv;
+        }
+
+        async function askQuestion() {
+            const input = getActiveInput();
             const question = input.value.trim();
+            
             if (!question) return;
             
-            messages.innerHTML += `<div class="chat-message user">${question}</div>`;
+            const suggestions = document.getElementById('qa-suggestions');
+            if (suggestions) suggestions.style.display = 'none';
+            
+            addMessage(question, true);
             input.value = '';
             
-            const botMsg = document.createElement('div');
-            botMsg.className = 'chat-message bot';
-            botMsg.textContent = '...';
-            messages.appendChild(botMsg);
-            messages.scrollTop = messages.scrollHeight;
+            if (!splitModeActive) {
+                activateSplitMode();
+            }
+            
+            const responseMsg = addMessage('Thinking...');
             
             try {
-                const response = await fetch('https://md-qa.md-health.workers.dev/ask', {
+                const res = await fetch(QA_API, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ question, topic: TOPIC })
+                    body: JSON.stringify({ question, topic: TOPIC, sessionId: SESSION_ID }),
                 });
                 
-                const reader = response.body.getReader();
+                if (!res.ok) {
+                    const error = await res.json();
+                    throw new Error(error.error || 'Request failed');
+                }
+                
+                const reader = res.body.getReader();
                 const decoder = new TextDecoder();
                 let fullText = '';
+                let displayedText = '';
+                let renderQueue = [];
+                let isRendering = false;
+                const CHARS_PER_TICK = 3;
+                const TICK_MS = 16;
+                
+                function renderLoop() {
+                    if (renderQueue.length === 0) {
+                        isRendering = false;
+                        return;
+                    }
+                    const batch = renderQueue.splice(0, CHARS_PER_TICK).join('');
+                    displayedText += batch;
+                    responseMsg.querySelector('p').textContent = displayedText;
+                    getActiveMessagesDiv().scrollTop = getActiveMessagesDiv().scrollHeight;
+                    requestAnimationFrame(() => setTimeout(renderLoop, TICK_MS));
+                }
+                
+                function queueText(text) {
+                    for (const char of text) {
+                        renderQueue.push(char);
+                    }
+                    if (!isRendering) {
+                        isRendering = true;
+                        renderLoop();
+                    }
+                }
                 
                 while (true) {
                     const { done, value } = await reader.read();
                     if (done) break;
+                    
                     const chunk = decoder.decode(value);
                     const lines = chunk.split('\n');
+                    
                     for (const line of lines) {
-                        if (line.startsWith('data: ') && !line.includes('[DONE]')) {
+                        if (line.startsWith('data: ')) {
+                            const data = line.slice(6);
+                            if (data === '[DONE]') continue;
+                            
                             try {
-                                const data = JSON.parse(line.slice(6));
-                                if (data.text) {
-                                    fullText += data.text;
-                                    botMsg.textContent = fullText;
+                                const parsed = JSON.parse(data);
+                                if (parsed.text) {
+                                    fullText += parsed.text;
+                                    queueText(parsed.text);
                                 }
                             } catch (e) {}
                         }
                     }
                 }
-            } catch (error) {
-                botMsg.textContent = 'Sorry, I encountered an error. Please try again.';
+                
+                await new Promise(resolve => {
+                    const checkDone = () => {
+                        if (renderQueue.length === 0 && !isRendering) {
+                            resolve();
+                        } else {
+                            setTimeout(checkDone, 50);
+                        }
+                    };
+                    checkDone();
+                });
+                
+                const formatted = fullText.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+                responseMsg.querySelector('p').innerHTML = formatted;
+                
+            } catch (err) {
+                responseMsg.querySelector('p').innerHTML = `<span style="color: #ef4444;">Sorry, something went wrong.</span>`;
             }
-            messages.scrollTop = messages.scrollHeight;
+            
+            getActiveMessagesDiv().scrollTop = getActiveMessagesDiv().scrollHeight;
         }
+        
+        function askSuggestion(el) {
+            document.getElementById('qa-input').value = el.textContent;
+            askQuestion();
+        }
+        
+        document.getElementById('qa-input').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                askQuestion();
+            }
+        });
+        
+        document.getElementById('panel-input').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                askQuestion();
+            }
+        });
     </script>
-<p style="text-align:center;color:#64748b;font-size:12px;padding:20px;">Last reviewed: February 2026</p></body>
+</body>
 </html>

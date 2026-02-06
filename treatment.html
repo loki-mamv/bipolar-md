@@ -2,75 +2,225 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="ai-content" content="allowed">
-    <meta name="ai-training" content="allowed">
-    <meta name="ai-topic" content="bipolar disorder, mental health, mood disorders">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bipolar Treatment Options — Medications & Therapy | bipolar.md</title>
-    <meta name="description" content="Evidence-based bipolar disorder treatments: mood stabilizers, antipsychotics, therapy, and lifestyle interventions. What works and what to expect.">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@thraborivemd">
-    <meta name="twitter:title" content="Bipolar Disorder Guide">
-    <meta name="twitter:description" content="Evidence-based health information from bipolar.md">
+    <title>Bipolar Disorder Treatment — Medications, Therapy & Management</title>
+    <meta name="description" content="Evidence-based treatment options for bipolar disorder including mood stabilizers, antipsychotics, psychotherapy, and lifestyle strategies for long-term management.">
     <link rel="canonical" href="https://bipolar.md/treatment.html">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%238b5cf6' text-anchor='middle'%3E.md%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%237c3aed' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-primary: #ffffff;
             --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
             --text-primary: #0f172a;
             --text-secondary: #475569;
             --text-muted: #94a3b8;
-            --accent: #8b5cf6;
-            --accent-dark: #7c3aed;
+            --accent: #7c3aed;
+            --accent-dark: #6d28d9;
             --accent-light: #ede9fe;
             --border: #e2e8f0;
             --font-display: 'Source Serif 4', Georgia, serif;
             --font-body: 'Inter', -apple-system, sans-serif;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: var(--font-body); background: var(--bg-primary); color: var(--text-primary); line-height: 1.8; font-size: 17px; }
-        
-        header { background: var(--bg-primary); border-bottom: 1px solid var(--border); padding: 16px 24px; position: sticky; top: 0; z-index: 100; }
-        .header-inner { max-width: 800px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--text-primary); text-decoration: none; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
         .logo span { color: var(--accent); }
-        nav a { color: var(--text-secondary); text-decoration: none; margin-left: 24px; font-size: 15px; }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
         nav a:hover { color: var(--accent); }
-        
-        article { max-width: 700px; margin: 0 auto; padding: 60px 24px 80px; }
-        .breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
-        .breadcrumb a { color: var(--accent); text-decoration: none; }
-        h1 { font-family: var(--font-display); font-size: clamp(32px, 5vw, 42px); font-weight: 700; line-height: 1.2; margin-bottom: 16px; }
-        .article-meta { font-size: 14px; color: var(--text-muted); margin-bottom: 24px; }
-        .article-intro { font-size: 19px; color: var(--text-secondary); padding-bottom: 32px; border-bottom: 1px solid var(--border); margin-bottom: 32px; }
-        
-        h2 { font-family: var(--font-display); font-size: 28px; font-weight: 600; margin: 48px 0 20px; }
-        h3 { font-family: var(--font-display); font-size: 22px; font-weight: 600; margin: 36px 0 16px; }
-        p { margin-bottom: 20px; }
-        ul, ol { margin: 0 0 20px 24px; }
-        li { margin-bottom: 10px; }
-        
-        .med-card { background: var(--bg-secondary); border-radius: 12px; padding: 24px; margin: 20px 0; border-left: 4px solid var(--accent); }
-        .med-card h4 { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
-        .med-card .examples { font-size: 14px; color: var(--accent); margin-bottom: 12px; }
-        .med-card p { margin-bottom: 8px; color: var(--text-secondary); }
-        .med-card .side-effects { font-size: 14px; color: var(--text-muted); }
-        
-        .warning-box { background: #fef3c7; border-left: 4px solid #f59e0b; padding: 20px 24px; margin: 32px 0; border-radius: 0 8px 8px 0; }
-        .warning-box h4 { color: #92400e; margin-bottom: 8px; }
-        .warning-box p { margin: 0; color: #78350f; }
-        
-        .therapy-card { background: var(--accent-light); border-radius: 12px; padding: 24px; margin: 20px 0; }
-        .therapy-card h4 { font-size: 18px; font-weight: 600; color: var(--accent-dark); margin-bottom: 8px; }
-        .therapy-card p { margin: 0; }
-        
-        footer { background: var(--bg-secondary); border-top: 1px solid var(--border); padding: 48px 24px; }
-        .footer-inner { max-width: 700px; margin: 0 auto; text-align: center; font-size: 14px; color: var(--text-muted); }
-        .footer-inner a { color: var(--accent); text-decoration: none; }
-        
-        @media (max-width: 768px) { nav { display: none; } }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 120px 24px 64px;
+        }
+        .page-header {
+            margin-bottom: 48px;
+        }
+        .page-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .page-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 48px;
+        }
+        h2 {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        h3 {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: var(--text-primary);
+        }
+        p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        .med-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .med-table thead {
+            background: var(--bg-secondary);
+        }
+        .med-table th {
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border);
+        }
+        .med-table td {
+            padding: 12px 16px;
+            font-size: 15px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+        .med-table tr:last-child td {
+            border-bottom: none;
+        }
+        .warning-box {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-left: 4px solid #ef4444;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .warning-box h3 {
+            color: #991b1b;
+            margin-top: 0;
+            font-size: 17px;
+        }
+        .warning-box p {
+            color: #7f1d1d;
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        .info-box {
+            background: var(--accent-light);
+            border: 1px solid #c4b5fd;
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            font-size: 17px;
+            color: var(--accent-dark);
+        }
+        .info-box p {
+            color: #5b21b6;
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        .treatment-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 28px;
+            margin: 24px 0;
+        }
+        .treatment-card h3 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+            margin-top: 80px;
+        }
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            main { padding: 100px 16px 40px; }
+            .med-table { font-size: 13px; }
+            .med-table th, .med-table td { padding: 8px 10px; }
+        }
     </style>
 </head>
 <body>
@@ -79,139 +229,235 @@
             <a href="/" class="logo">bipolar<span>.md</span></a>
             <nav>
                 <a href="/">Home</a>
-                <a href="/blog.html">Articles</a>
-                <a href="/resources.html">Resources</a>
+                <a href="/types.html">Types</a>
+                <a href="/symptoms.html">Symptoms</a>
+                <a href="/treatment.html">Treatment</a>
+                <a href="/living-with-bipolar.html">Living With</a>
+                <a href="/faq.html">FAQ</a>
             </nav>
         </div>
     </header>
 
-    <article>
-        <div class="breadcrumb"><a href="/">Home</a> / <a href="/blog.html">Articles</a> / Treatment</div>
-        <h1>Bipolar Disorder Treatment</h1>
-        <div class="article-meta">Updated Feb 2026 · 15 min read</div>
-        <p class="article-intro">Bipolar disorder is a lifelong condition, but it's highly treatable. The right combination of medication, therapy, and lifestyle management can lead to long periods of stability.</p>
-
-        <h2>Medication: The Foundation</h2>
-        <p>Most people with bipolar disorder need medication to achieve and maintain stability. The goal is to prevent both manic/hypomanic and depressive episodes while minimizing side effects.</p>
-
-        <h3>Mood Stabilizers</h3>
-        
-        <div class="med-card">
-            <h4>Lithium</h4>
-            <div class="examples">Brand names: Lithobid, Eskalith</div>
-            <p>The gold standard for bipolar treatment since the 1970s. Effective for both mania and depression, and the only medication proven to reduce suicide risk in bipolar disorder.</p>
-            <p><strong>Monitoring required:</strong> Regular blood tests for lithium levels, kidney function, and thyroid function.</p>
-            <div class="side-effects">Common side effects: Thirst, frequent urination, tremor, weight gain, cognitive dulling</div>
-        </div>
-
-        <div class="med-card">
-            <h4>Valproate/Divalproex</h4>
-            <div class="examples">Brand names: Depakote, Depakene</div>
-            <p>Effective for acute mania and maintenance. Often better tolerated than lithium for some patients. Works faster than lithium for acute episodes.</p>
-            <div class="side-effects">Common side effects: Weight gain, sedation, tremor, hair loss, GI upset. Not safe during pregnancy.</div>
-        </div>
-
-        <div class="med-card">
-            <h4>Lamotrigine</h4>
-            <div class="examples">Brand names: Lamictal</div>
-            <p>Particularly effective for bipolar depression and maintenance. Less effective for acute mania. Often well-tolerated with minimal weight gain.</p>
-            <p><strong>Must titrate slowly</strong> to reduce risk of serious skin rash (Stevens-Johnson syndrome).</p>
-            <div class="side-effects">Common side effects: Headache, dizziness, rash (report immediately)</div>
-        </div>
-
-        <h3>Atypical Antipsychotics</h3>
-        <p>These medications treat acute episodes and provide maintenance. They work faster than traditional mood stabilizers for acute mania.</p>
-
-        <div class="med-card">
-            <h4>Quetiapine (Seroquel)</h4>
-            <p>FDA-approved for bipolar mania, depression, and maintenance. One of the most versatile bipolar medications.</p>
-            <div class="side-effects">Common side effects: Sedation, weight gain, metabolic effects</div>
-        </div>
-
-        <div class="med-card">
-            <h4>Aripiprazole (Abilify)</h4>
-            <p>FDA-approved for mania and maintenance. Generally less sedating and less weight gain than other antipsychotics.</p>
-            <div class="side-effects">Common side effects: Restlessness (akathisia), insomnia</div>
-        </div>
-
-        <div class="med-card">
-            <h4>Other Options</h4>
-            <p>Olanzapine (Zyprexa), risperidone (Risperdal), lurasidone (Latuda), and cariprazine (Vraylar) also have FDA approval for various phases of bipolar disorder. Each has different side effect profiles.</p>
+    <main>
+        <div class="page-header">
+            <div class="page-eyebrow">Treatment Options</div>
+            <h1>Treating Bipolar Disorder</h1>
+            <p class="page-subtitle">Bipolar disorder is highly treatable. With the right combination of medication, therapy, and lifestyle management, most people can achieve significant symptom relief and stability.</p>
         </div>
 
         <div class="warning-box">
-            <h4>⚠️ Antidepressants: Proceed With Caution</h4>
-            <p>Antidepressants can trigger mania or rapid cycling in bipolar disorder. If used at all, they should always be paired with a mood stabilizer or antipsychotic. Many bipolar specialists prefer to avoid them entirely.</p>
+            <h3>⚠️ Medical Supervision Required</h3>
+            <p>All medications for bipolar disorder require a prescription and regular monitoring by a healthcare provider. Never start, stop, or change medications without consulting your doctor.</p>
         </div>
 
-        <h2>Psychotherapy</h2>
-        <p>Medication manages symptoms, but therapy teaches skills, improves relationships, and helps you understand your condition. Research supports several approaches:</p>
+        <section class="section">
+            <h2>Treatment Overview</h2>
+            <p>Effective bipolar treatment typically involves:</p>
+            <ul>
+                <li><strong>Medications</strong> to stabilize mood and prevent episodes</li>
+                <li><strong>Psychotherapy</strong> to develop coping skills and address triggers</li>
+                <li><strong>Lifestyle modifications</strong> to maintain stability</li>
+                <li><strong>Monitoring</strong> to catch early warning signs</li>
+            </ul>
+            <p>Treatment is lifelong—even when you feel well, continuing medication and therapy helps prevent future episodes.</p>
+        </section>
 
-        <div class="therapy-card">
-            <h4>Cognitive Behavioral Therapy (CBT)</h4>
-            <p>Helps identify and change negative thought patterns and behaviors. Teaches coping skills for managing symptoms and preventing relapse. Can help address sleep problems, substance use, and other co-occurring issues.</p>
-        </div>
+        <section class="section">
+            <h2>Medications</h2>
+            <p>Medications are the cornerstone of bipolar treatment. The main categories include:</p>
+            
+            <h3>Mood Stabilizers</h3>
+            <table class="med-table">
+                <thead>
+                    <tr>
+                        <th>Medication</th>
+                        <th>Brand Names</th>
+                        <th>Primary Uses</th>
+                        <th>Key Considerations</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Lithium</strong></td>
+                        <td>Lithobid, Eskalith</td>
+                        <td>Mania, maintenance, suicide prevention</td>
+                        <td>Requires blood level monitoring; highly effective</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Valproate</strong></td>
+                        <td>Depakote, Depakene</td>
+                        <td>Mania, mixed episodes, maintenance</td>
+                        <td>Avoid in pregnancy; monitor liver function</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Carbamazepine</strong></td>
+                        <td>Tegretol, Equetro</td>
+                        <td>Mania, mixed episodes</td>
+                        <td>Drug interactions; blood monitoring required</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="info-box">
+                <h3>💊 Lithium: The Gold Standard</h3>
+                <p>Lithium has been used for over 50 years and remains one of the most effective treatments for bipolar disorder. It's particularly effective for preventing suicide and mania. Regular blood tests are needed to ensure safe levels.</p>
+            </div>
+            
+            <h3>Atypical Antipsychotics</h3>
+            <table class="med-table">
+                <thead>
+                    <tr>
+                        <th>Medication</th>
+                        <th>Brand Names</th>
+                        <th>FDA Approved For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Quetiapine</strong></td>
+                        <td>Seroquel</td>
+                        <td>Mania, depression, maintenance</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Olanzapine</strong></td>
+                        <td>Zyprexa</td>
+                        <td>Mania, mixed episodes, maintenance</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Aripiprazole</strong></td>
+                        <td>Abilify</td>
+                        <td>Mania, mixed episodes, maintenance</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Risperidone</strong></td>
+                        <td>Risperdal</td>
+                        <td>Mania, mixed episodes</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lurasidone</strong></td>
+                        <td>Latuda</td>
+                        <td>Bipolar depression</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cariprazine</strong></td>
+                        <td>Vraylar</td>
+                        <td>Mania, mixed episodes, depression</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>Other Anticonvulsants</h3>
+            <table class="med-table">
+                <thead>
+                    <tr>
+                        <th>Medication</th>
+                        <th>Brand Name</th>
+                        <th>Primary Use</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Lamotrigine</strong></td>
+                        <td>Lamictal</td>
+                        <td>Depression prevention, maintenance</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="font-size: 14px; color: var(--text-muted);">Lamotrigine is particularly useful for preventing depressive episodes and is often a first-line option for Bipolar II disorder. It requires slow dose titration to prevent serious skin reactions.</p>
+            
+            <h3>Antidepressants</h3>
+            <div class="warning-box">
+                <h3>⚠️ Antidepressant Caution</h3>
+                <p>Antidepressants can trigger manic episodes or rapid cycling in people with bipolar disorder. They should <strong>only</strong> be used alongside a mood stabilizer or antipsychotic, and under careful medical supervision. Some people with bipolar disorder cannot tolerate antidepressants at all.</p>
+            </div>
+        </section>
 
-        <div class="therapy-card">
-            <h4>Interpersonal and Social Rhythm Therapy (IPSRT)</h4>
-            <p>Specifically developed for bipolar disorder. Focuses on stabilizing daily routines (sleep, meals, activity) and improving relationships. Helps identify triggers and early warning signs.</p>
-        </div>
+        <section class="section">
+            <h2>Psychotherapy</h2>
+            <p>Therapy is highly effective when combined with medication. Evidence-based therapies for bipolar disorder include:</p>
+            
+            <div class="treatment-card">
+                <h3>Cognitive Behavioral Therapy (CBT)</h3>
+                <p>Helps identify and change negative thought patterns and behaviors. Effective for managing depression, reducing relapse, and improving medication adherence.</p>
+                <p><strong>Focus areas:</strong> Thought patterns, problem-solving, behavioral activation</p>
+            </div>
+            
+            <div class="treatment-card">
+                <h3>Interpersonal and Social Rhythm Therapy (IPSRT)</h3>
+                <p>Specifically developed for bipolar disorder. Focuses on stabilizing daily routines (sleep, meals, activities) and improving interpersonal relationships.</p>
+                <p><strong>Focus areas:</strong> Sleep hygiene, routine, relationships, life transitions</p>
+            </div>
+            
+            <div class="treatment-card">
+                <h3>Family-Focused Therapy (FFT)</h3>
+                <p>Involves family members in treatment. Improves communication, reduces family conflict, and helps loved ones recognize warning signs.</p>
+                <p><strong>Focus areas:</strong> Psychoeducation, communication, problem-solving</p>
+            </div>
+            
+            <div class="treatment-card">
+                <h3>Psychoeducation</h3>
+                <p>Learning about bipolar disorder—its symptoms, course, and treatment—is itself a powerful intervention. Understanding your illness helps you recognize warning signs and stick with treatment.</p>
+            </div>
+        </section>
 
-        <div class="therapy-card">
-            <h4>Family-Focused Therapy</h4>
-            <p>Involves family members in treatment. Improves communication, reduces conflict, and teaches family members to recognize warning signs and support recovery. Particularly effective for younger patients.</p>
-        </div>
+        <section class="section">
+            <h2>Other Treatments</h2>
+            
+            <h3>Electroconvulsive Therapy (ECT)</h3>
+            <p>ECT involves passing small electrical currents through the brain to trigger a brief seizure under anesthesia. Despite its portrayal in media, modern ECT is safe and highly effective for:</p>
+            <ul>
+                <li>Severe depression that doesn't respond to medications</li>
+                <li>Severe mania</li>
+                <li>When rapid treatment is needed (e.g., suicidal crisis)</li>
+                <li>During pregnancy when medications pose risks</li>
+            </ul>
+            
+            <h3>Transcranial Magnetic Stimulation (TMS)</h3>
+            <p>A non-invasive treatment using magnetic fields to stimulate brain cells. FDA-approved for depression, with ongoing research for bipolar depression.</p>
+            
+            <h3>Light Therapy</h3>
+            <p>May help with depressive episodes, particularly those with seasonal patterns. Use with caution as it can trigger mania—always under medical supervision.</p>
+        </section>
 
-        <div class="therapy-card">
-            <h4>Psychoeducation</h4>
-            <p>Structured education about bipolar disorder—what it is, how treatment works, early warning signs, and self-management strategies. Even simple psychoeducation reduces relapse rates.</p>
-        </div>
+        <section class="section">
+            <h2>Choosing Treatment</h2>
+            <p>Treatment is individualized based on:</p>
+            <ul>
+                <li><strong>Type of bipolar disorder:</strong> Bipolar I, II, or cyclothymia</li>
+                <li><strong>Predominant symptoms:</strong> Mania vs. depression</li>
+                <li><strong>Episode phase:</strong> Acute treatment vs. maintenance</li>
+                <li><strong>Individual response:</strong> Previous medication history</li>
+                <li><strong>Side effect profile:</strong> Tolerability</li>
+                <li><strong>Comorbid conditions:</strong> Anxiety, substance use, etc.</li>
+                <li><strong>Patient preferences:</strong> Shared decision-making</li>
+            </ul>
+            
+            <div class="info-box">
+                <h3>🎯 Finding the Right Fit</h3>
+                <p>Finding the right medication or combination often requires patience. It may take several trials to find what works best for you. Keep communicating with your treatment team and don't give up.</p>
+            </div>
+        </section>
 
-        <h2>Lifestyle Management</h2>
-        <p>These aren't optional extras—lifestyle factors are critical to stability:</p>
+        <section class="section">
+            <h2>Treatment Adherence</h2>
+            <p>One of the biggest challenges in bipolar treatment is medication adherence. Common reasons people stop taking medications:</p>
+            <ul>
+                <li>Side effects</li>
+                <li>Missing the "highs" of hypomania</li>
+                <li>Feeling "cured" when stable</li>
+                <li>Stigma</li>
+                <li>Cost or access issues</li>
+            </ul>
+            <p><strong>Remember:</strong> Stopping medication—especially suddenly—significantly increases the risk of relapse. If you're having issues with your treatment, talk to your provider about alternatives rather than stopping on your own.</p>
+        </section>
 
-        <h3>Sleep</h3>
-        <p>Sleep disruption is both a trigger and early warning sign. Prioritize:</p>
-        <ul>
-            <li>Regular sleep and wake times (even on weekends)</li>
-            <li>7-9 hours per night</li>
-            <li>Treating sleep disorders if present</li>
-            <li>Alerting your doctor if sleep patterns change significantly</li>
-        </ul>
-
-        <h3>Routine</h3>
-        <p>Predictable daily schedules stabilize circadian rhythms and reduce episode risk. Structure meals, exercise, social activities, and work around consistent times.</p>
-
-        <h3>Substance Avoidance</h3>
-        <p>Alcohol and drugs worsen bipolar disorder and interfere with medication. Caffeine can disrupt sleep. Cannabis may trigger or worsen episodes in some people.</p>
-
-        <h3>Stress Management</h3>
-        <p>Major life stressors can trigger episodes. While you can't eliminate stress, you can build resilience through therapy, social support, and stress-reduction techniques.</p>
-
-        <h2>Other Treatments</h2>
-
-        <h3>Electroconvulsive Therapy (ECT)</h3>
-        <p>Highly effective for severe or treatment-resistant episodes, especially severe depression or catatonia. Modern ECT is safe and has fewer side effects than portrayed in media. Memory side effects are usually temporary.</p>
-
-        <h3>Transcranial Magnetic Stimulation (TMS)</h3>
-        <p>FDA-approved for depression. Some evidence for bipolar depression, but less studied than ECT. Typically used when medications aren't working well enough.</p>
-
-        <h2>Finding the Right Treatment</h2>
-        <p>It often takes time and patience to find the right medication combination. Tips for working with your treatment team:</p>
-        <ul>
-            <li><strong>Be honest</strong> about symptoms, side effects, and whether you're taking medications as prescribed</li>
-            <li><strong>Keep a mood chart</strong> to track patterns and medication effects</li>
-            <li><strong>Don't stop medications</strong> without discussing with your doctor—even if you feel fine</li>
-            <li><strong>Report side effects</strong> early—often they can be managed with dose adjustments or medication changes</li>
-            <li><strong>Give medications time</strong>—full effects may take weeks to months</li>
-        </ul>
-    </article>
+    </main>
 
     <footer>
         <div class="footer-inner">
-            <p>© 2026 bipolar.md · Part of the <a href="https://thrive.md">thrive.md</a> health network</p>
-            <p style="margin-top: 12px; font-size: 12px;">This website provides general health information. It is not a substitute for professional medical advice.</p>
+            <p>© 2026 bipolar.md · Part of <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a></p>
+            <p style="margin-top: 8px; font-size: 12px;">Information based on clinical guidelines and FDA-approved treatments. This is not medical advice. Always consult a mental health professional.</p>
         </div>
     </footer>
-<p style="text-align:center;color:#64748b;font-size:12px;padding:20px;">Last reviewed: February 2026</p></body>
+</body>
 </html>
