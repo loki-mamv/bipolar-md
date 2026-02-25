@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://bipolar.md/blog/mood-stabilizers-guide/#article"},
           "wordCount": "719",
           "lastReviewed": "2026-02-17",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Do you have to take mood stabilizers forever?", "acceptedAnswer": {"@type": "Answer", "text": "For most people with Bipolar I or II, long-term medication is recommended because bipolar disorder is a chronic, episodic condition. Stopping medication is the strongest predictor of relapse. Some people discuss gradual discontinuation with their psychiatrist after prolonged stability, but this requires careful monitoring."}}, {"@type": "Question", "name": "Can mood stabilizers cause weight gain?", "acceptedAnswer": {"@type": "Answer", "text": "Some do significantly \u2014 lithium, valproate, and quetiapine are the main culprits. Lamotrigine is weight-neutral for most people. Lurasidone and aripiprazole have more favorable metabolic profiles. Weight gain is a legitimate concern and a common reason people stop medication, so discuss this openly with your prescriber."}}, {"@type": "Question", "name": "Is lithium safe long-term?", "acceptedAnswer": {"@type": "Answer", "text": "With proper monitoring (blood levels, kidney function, thyroid every 6-12 months), lithium is safe for decades. The kidney and thyroid risks are real but manageable \u2014 and the anti-suicide benefit is substantial. Many patients have taken lithium for 30+ years successfully."}}, {"@type": "Question", "name": "What happens if I miss a dose?", "acceptedAnswer": {"@type": "Answer", "text": "Missing one dose is generally not dangerous, but don't double up. Take it when you remember unless it's close to the next dose. Consistent dosing matters because mood stabilizers work through steady blood levels. Frequent missed doses increase relapse risk significantly."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

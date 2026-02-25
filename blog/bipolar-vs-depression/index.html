@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://bipolar.md/blog/bipolar-vs-depression/#article"},
           "wordCount": "626",
           "lastReviewed": "2026-02-19",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Can antidepressants make bipolar worse?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Antidepressants without mood stabilizer coverage can trigger manic or hypomanic episodes ('switching'), accelerate the frequency of mood cycling, and potentially worsen the long-term course. This is one of the main reasons correct diagnosis matters."}}, {"@type": "Question", "name": "How do doctors test for bipolar disorder?", "acceptedAnswer": {"@type": "Answer", "text": "There's no blood test or brain scan for bipolar. Diagnosis is clinical \u2014 based on a thorough psychiatric evaluation that includes detailed history of mood episodes, family history, and behavioral patterns. Screening tools like the MDQ help identify people who need full evaluation."}}, {"@type": "Question", "name": "Can you have bipolar disorder and major depression?", "acceptedAnswer": {"@type": "Answer", "text": "The diagnoses are mutually exclusive \u2014 if you have bipolar disorder, your depressive episodes are classified as 'bipolar depression,' not separate major depressive disorder. However, the lived experience of a bipolar depressive episode is essentially identical to a major depressive episode."}}, {"@type": "Question", "name": "What if my doctor says I have depression but I think it's bipolar?", "acceptedAnswer": {"@type": "Answer", "text": "Advocate for yourself. Share your concerns, bring the specific observations that concern you (family history, antidepressant reactions, episodic pattern, periods of elevated mood). If your doctor dismisses these without thorough evaluation, seeking a second opinion from a psychiatrist is appropriate."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

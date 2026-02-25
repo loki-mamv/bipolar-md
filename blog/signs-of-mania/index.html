@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://bipolar.md/blog/signs-of-mania/#article"},
           "wordCount": "828",
           "lastReviewed": "2026-02-20",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "How long does a manic episode last?", "acceptedAnswer": {"@type": "Answer", "text": "Untreated manic episodes typically last 3-6 months. With treatment, most episodes resolve within weeks. Hypomanic episodes are shorter \u2014 at least 4 days by definition, often 1-2 weeks. Early intervention significantly shortens episode duration."}}, {"@type": "Question", "name": "Can you have mania without bipolar disorder?", "acceptedAnswer": {"@type": "Answer", "text": "Mania can be caused by substances (stimulants, steroids, certain medications), medical conditions (thyroid disorders, neurological conditions), or sleep deprivation. However, recurrent manic episodes without an identifiable external cause are essentially diagnostic of Bipolar I disorder."}}, {"@type": "Question", "name": "Is hypomania dangerous?", "acceptedAnswer": {"@type": "Answer", "text": "Hypomania itself may not be dangerous \u2014 some people are genuinely productive during it. The risk is escalation into full mania (in Bipolar I) and the depressive crash that often follows. Even without escalation, hypomanic impulsivity (financial, sexual, interpersonal) can cause lasting consequences."}}, {"@type": "Question", "name": "Why do people with mania stop taking medication?", "acceptedAnswer": {"@type": "Answer", "text": "Mania feels good \u2014 energized, confident, creative. Medication brings you back to 'normal,' which feels flat by comparison. Many people stop medication because they mistake stability for depression, or because they believe they've been cured. This is anosognosia \u2014 lack of insight into one's own condition \u2014 and it's a symptom, not a choice."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

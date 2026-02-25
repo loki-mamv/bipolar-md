@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://bipolar.md/blog/bipolar-relationships/#article"},
           "wordCount": "690",
           "lastReviewed": "2026-02-18",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Can someone with bipolar disorder have a healthy relationship?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. With consistent treatment, self-awareness, and a partner who understands the condition, many people with bipolar disorder maintain loving, stable long-term relationships. Treatment adherence is the key variable \u2014 managed bipolar has a dramatically different relationship impact than unmanaged bipolar."}}, {"@type": "Question", "name": "Should I leave my bipolar partner?", "acceptedAnswer": {"@type": "Answer", "text": "This depends on circumstances, not diagnosis. If your partner is seeking treatment, taking medication, and working on the relationship, the prognosis is good. If they refuse treatment, engage in abusive behavior regardless of mood state, or the relationship is causing persistent harm, leaving is a legitimate consideration regardless of the reason."}}, {"@type": "Question", "name": "Is it my fault when my bipolar partner has an episode?", "acceptedAnswer": {"@type": "Answer", "text": "No. Mood episodes are driven by neurobiological factors \u2014 brain chemistry, circadian disruption, medication changes. Stress can be a trigger, but you are not responsible for your partner's illness. Partners who absorb blame often develop their own mental health problems."}}, {"@type": "Question", "name": "How do I tell my new partner I have bipolar disorder?", "acceptedAnswer": {"@type": "Answer", "text": "Timing matters \u2014 not on the first date, but before the relationship becomes serious. Choose a calm moment, be factual ('I have bipolar disorder, here's what that means for me, here's how I manage it'), and be open to questions. A partner who can't handle the disclosure isn't the right partner."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://bipolar.md/blog/bipolar-types-explained/#article"},
           "wordCount": "712",
           "lastReviewed": "2026-02-14",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Is Bipolar II less serious than Bipolar I?", "acceptedAnswer": {"@type": "Answer", "text": "No. While Bipolar II lacks full mania, the depressive episodes are often more severe, more frequent, and more chronic. People with Bipolar II have comparable or higher rates of suicidal ideation and functional impairment. 'Less dramatic' doesn't mean 'less serious.'"}}, {"@type": "Question", "name": "Can you have bipolar disorder without mania?", "acceptedAnswer": {"@type": "Answer", "text": "Bipolar II involves hypomania (a milder form) rather than full mania. Cyclothymia involves even milder mood elevations. However, bipolar disorder by definition requires some form of elevated mood episode. Depression alone, regardless of severity, is diagnosed as major depressive disorder."}}, {"@type": "Question", "name": "How is bipolar different from mood swings?", "acceptedAnswer": {"@type": "Answer", "text": "Normal mood swings last hours and respond to circumstances. Bipolar episodes last days to weeks (or months for depression), involve distinct changes in energy, sleep, and behavior, and significantly impair functioning. Bipolar mood shifts are also often independent of circumstances \u2014 mania doesn't require good news, and depression doesn't require bad news."}}, {"@type": "Question", "name": "Can bipolar disorder develop later in life?", "acceptedAnswer": {"@type": "Answer", "text": "Most cases onset in late teens to mid-20s. Late-onset bipolar (after 50) does occur but is less common and should prompt evaluation for other causes \u2014 thyroid disorders, neurological conditions, or medication side effects. Apparent late onset may also reflect decades of unrecognized symptoms."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>
